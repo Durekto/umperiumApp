@@ -1,45 +1,15 @@
-// import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-// import {} from '@ionic/core';
-// import { IonButton } from '@ionic/react';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//       <IonButton>HI</IonButton>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import {} from '@ionic/core';
-import { IonLabel } from '@ionic/react';
+import { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonBadge } from '@ionic/react';
+import Home from './pages/Home';
+import Tab2 from './pages/Tab2';
 
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-//import Home from './pages/Home';
-//import NewItem from './pages/NewItem';
+import { images } from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -60,40 +30,43 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-// const App: React.FC = () => {
-//   const isAuthed = true;
-//   return (
-//     <IonApp>
-//       <IonReactRouter>
-//         <IonRouterOutlet>
-//           {/* <Route path="/home" component={Home} exact={true} />
-//           <Route path="/new" component={NewItem} exact={true} /> */}
-//           <Route exact path="/" render={() => <Redirect to="/home" />} />
-//         </IonRouterOutlet>
-//       </IonReactRouter>
-//     </IonApp>
-//   );
-// }
-
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <IonLabel>Supported By Ionic</IonLabel>
-      </header>
-    </div>
+    <IonApp>
+      <IonReactRouter>
+        <IonTabs>
+          <IonRouterOutlet>
+            <Route path="/home" component={Home} exact={true} />
+            <Route path="/tab2" component={Tab2} exact={true} />
+            <Route path="/tab3" component={Tab2} exact={true} />
+            <Route path="/tab4" component={Tab2} exact={true} />
+            <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
+          </IonRouterOutlet>
+          <IonTabBar slot="bottom">
+            <IonTabButton tab="home" href='/home'>
+              <IonIcon name="home" icon={images} />
+              <IonLabel>Home</IonLabel>
+              <IonBadge>6</IonBadge>
+            </IonTabButton>
+  
+            <IonTabButton tab="tab2" href='/tab2'>
+              <IonIcon name="tab2" />
+              <IonLabel>Tab 2</IonLabel>
+            </IonTabButton>
+  
+            <IonTabButton tab="tab3" href='/tab2'>
+              <IonIcon name="tab3" />
+              <IonLabel>Tab 3</IonLabel>
+            </IonTabButton>
+  
+            <IonTabButton tab="tab4" href='/tab2'>
+              <IonIcon name="tab4" />
+              <IonLabel>Tab 4</IonLabel>
+            </IonTabButton>
+          </IonTabBar>
+        </IonTabs>
+      </IonReactRouter>
+    </IonApp>
   );
 }
 
