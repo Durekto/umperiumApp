@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.ion-page > ion-content
+{
+  left: 15px;
+  top: 60px;
+}
+
+.itemBtns {
+  color: black;
+  font-size: 100%;
+  padding-right: 100%;  
+}

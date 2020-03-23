@@ -1,16 +1,36 @@
 import React from 'react';
 import './App.css';
 
+import {
+	IonApp,
+	IonTabs,
+	IonTabBar,
+	IonTabButton,
+	IonLabel,
+	IonRouterOutlet,
+	IonIcon,
+  IonHeader,
+  IonList,
+  IonItem,
+  IonContent,
+  IonMenu,
+  IonToolbar,
+  IonTitle,
+  IonButtons,
+  IonMenuButton,
+  IonSplitPane,
+  IonMenuToggle,
+  IonNav,
+  IonButton,
+} from '@ionic/react';
 import {} from '@ionic/core';
-import { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonBadge } from '@ionic/react';
-import Home from './pages/Home';
-import Tab2 from './pages/Tab2';
-
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { images } from 'ionicons/icons';
+import { Route, Redirect } from 'react-router-dom';
 
+import Home from './pages/Home';
+import Tab1 from './pages/Tab1';
+
+//#region CSS
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -26,47 +46,86 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
+//#endregion
 
-/* Theme variables */
-import './theme/variables.css';
+import { home, person, chatbubbles, settings, informationCircle } from 'ionicons/icons';
 
-const App: React.FC = () => {
+function App() {
   return (
-    <IonApp>
-      <IonReactRouter>
-        <IonTabs>
-          <IonRouterOutlet>
-            <Route path="/home" component={Home} exact={true} />
-            <Route path="/tab2" component={Tab2} exact={true} />
-            <Route path="/tab3" component={Tab2} exact={true} />
-            <Route path="/tab4" component={Tab2} exact={true} />
-            <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
-          </IonRouterOutlet>
-          <IonTabBar slot="bottom">
-            <IonTabButton tab="home" href='/home'>
-              <IonIcon name="home" icon={images} />
-              <IonLabel>Home</IonLabel>
-              <IonBadge>6</IonBadge>
-            </IonTabButton>
-  
-            <IonTabButton tab="tab2" href='/tab2'>
-              <IonIcon name="tab2" />
-              <IonLabel>Tab 2</IonLabel>
-            </IonTabButton>
-  
-            <IonTabButton tab="tab3" href='/tab2'>
-              <IonIcon name="tab3" />
-              <IonLabel>Tab 3</IonLabel>
-            </IonTabButton>
-  
-            <IonTabButton tab="tab4" href='/tab2'>
-              <IonIcon name="tab4" />
-              <IonLabel>Tab 4</IonLabel>
-            </IonTabButton>
-          </IonTabBar>
-        </IonTabs>
-      </IonReactRouter>
-    </IonApp>
+      <IonApp>
+
+        <IonHeader id='common-header'>
+          <IonToolbar color='dark'>
+            <IonButtons slot='start'>
+                <IonMenuButton menu='main-menu'></IonMenuButton>
+            </IonButtons>
+            <IonTitle>
+              <IonItem button href='/home' color='dark'>Umperium Image</IonItem>
+            </IonTitle>
+          </IonToolbar>
+        </IonHeader>
+        <IonNav></IonNav>
+
+        {/* <IonSplitPane> */}
+          <IonMenu menuId='main-menu' contentId='menu-items' type='overlay'>
+            <IonHeader>
+              <IonToolbar color="dark">
+                <IonTitle>Menu</IonTitle>
+              </IonToolbar>
+            </IonHeader>
+            <IonContent id='menu-items'>
+              <IonList>
+                <IonMenuToggle menu='main-menu'>
+                  <IonItem href='/home'>
+                    <IonIcon icon={home} slot="start"></IonIcon>
+                    <IonLabel>Home</IonLabel>
+                    {/* <IonButton fill='clear' class='itemBtns'>Home</IonButton> */}
+                  </IonItem>
+                  <IonItem href='/profile'>
+                    <IonIcon icon={person} slot="start"></IonIcon>
+                    <IonLabel>Profile</IonLabel>
+                  </IonItem>
+                  <IonItem href='/chat'>
+                    <IonIcon icon={chatbubbles} slot="start"></IonIcon>
+                    <IonLabel>Messages</IonLabel>
+                  </IonItem>
+                  <IonItem href='/settings'>
+                    <IonIcon icon={settings} slot="start"></IonIcon>
+                    <IonLabel>Settings</IonLabel>
+                  </IonItem>
+                </IonMenuToggle>
+              </IonList>
+            </IonContent>
+          </IonMenu>
+        {/* </IonSplitPane> */}
+
+        <IonReactRouter>
+          <IonTabs>
+              <IonRouterOutlet>
+                  <Route path="/tab1" component={Tab1} exact={true} />
+                  <Route path="/tab2" component={Tab1} exact={true} />
+                  <Route path="/tab3" component={Tab1} exact={true} />
+                  <Route path="/home" component={Home} exact={true} />
+                  <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
+              </IonRouterOutlet>
+
+              <IonTabBar slot="bottom">
+                  <IonTabButton tab="home" href="/tab1">
+                      <IonIcon icon={home} />
+                      <IonLabel>Tab 1</IonLabel>
+                  </IonTabButton>
+                  <IonTabButton tab="settings" href="/tab2">
+                      <IonIcon icon={settings} />
+                      <IonLabel>Tab 2</IonLabel>
+                  </IonTabButton>
+                  <IonTabButton tab="about" href="/tab3">
+                      <IonIcon icon={informationCircle} />
+                      <IonLabel>Tab 3</IonLabel>
+                  </IonTabButton>
+              </IonTabBar>
+          </IonTabs>
+        </IonReactRouter>
+      </IonApp>
   );
 }
 
