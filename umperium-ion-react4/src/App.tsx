@@ -21,6 +21,7 @@ import {
   IonFab,
   IonFabButton,
 
+
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
@@ -54,34 +55,62 @@ function App() {
 
 
     <IonReactRouter>
-df
-      <IonMenu side="end">
+
+
+
+
+
+
+
+      <IonMenu contentId="main">
+
         <IonHeader>
-          <IonToolbar >
+          <IonToolbar color="primary">
             <IonTitle>Menu</IonTitle>
           </IonToolbar>
         </IonHeader>
+
         <IonContent>
           <IonList>
-            <IonItem>
-              <IonIcon name="home" slot="start"></IonIcon>
-              <IonLabel>Home</IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonIcon name="person" slot="start"></IonIcon>
-              <IonLabel>Profile</IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonIcon name="chatbubbles" slot="start"></IonIcon>
-              <IonLabel>Messages</IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonIcon name="settings" slot="start"></IonIcon>
-              <IonLabel>Settings</IonLabel>
-            </IonItem>
+            <IonItem>Menu Item</IonItem>
+            <IonItem>Menu Item</IonItem>
+            <IonItem>Menu Item</IonItem>
+            <IonItem>Menu Item</IonItem>
+            <IonItem>Menu Item</IonItem>
           </IonList>
         </IonContent>
       </IonMenu>
+
+
+
+
+      {/*<IonMenu side="end">*/}
+      {/*  <IonHeader>*/}
+      {/*    <IonToolbar >*/}
+      {/*      <IonTitle>Menu</IonTitle>*/}
+      {/*    </IonToolbar>*/}
+      {/*  </IonHeader>*/}
+      {/*  <IonContent>*/}
+      {/*    <IonList>*/}
+      {/*      <IonItem>*/}
+      {/*        <IonIcon name="home" slot="start"></IonIcon>*/}
+      {/*        <IonLabel>Home</IonLabel>*/}
+      {/*      </IonItem>*/}
+      {/*      <IonItem>*/}
+      {/*        <IonIcon name="person" slot="start"></IonIcon>*/}
+      {/*        <IonLabel>Profile</IonLabel>*/}
+      {/*      </IonItem>*/}
+      {/*      <IonItem>*/}
+      {/*        <IonIcon name="chatbubbles" slot="start"></IonIcon>*/}
+      {/*        <IonLabel>Messages</IonLabel>*/}
+      {/*      </IonItem>*/}
+      {/*      <IonItem>*/}
+      {/*        <IonIcon name="settings" slot="start"></IonIcon>*/}
+      {/*        <IonLabel>Settings</IonLabel>*/}
+      {/*      </IonItem>*/}
+      {/*    </IonList>*/}
+      {/*  </IonContent>*/}
+      {/*</IonMenu>*/}
 dff
     </IonReactRouter>
 
