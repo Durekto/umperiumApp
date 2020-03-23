@@ -1,7 +1,27 @@
 import React from 'react';
 import './App.css';
 
-import { IonApp, IonTabs, IonRouterOutlet, IonTabBar, IonTabButton, IonIcon, IonLabel, IonBadge } from '@ionic/react';
+import {
+  IonApp,
+  IonTabs,
+  IonRouterOutlet,
+  IonTabBar,
+  IonTabButton,
+  IonIcon,
+  IonLabel,
+  IonBadge,
+  IonPage,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonMenu,
+  IonContent,
+  IonList,
+  IonItem,
+  IonFab,
+  IonFabButton,
+
+} from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 
@@ -29,8 +49,45 @@ import Tab2 from './pages/Tab2';
 
 function App() {
   return (
+
     <IonApp>
+
+
+    <IonReactRouter>
+df
+      <IonMenu side="end">
+        <IonHeader>
+          <IonToolbar >
+            <IonTitle>Menu</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+        <IonContent>
+          <IonList>
+            <IonItem>
+              <IonIcon name="home" slot="start"></IonIcon>
+              <IonLabel>Home</IonLabel>
+            </IonItem>
+            <IonItem>
+              <IonIcon name="person" slot="start"></IonIcon>
+              <IonLabel>Profile</IonLabel>
+            </IonItem>
+            <IonItem>
+              <IonIcon name="chatbubbles" slot="start"></IonIcon>
+              <IonLabel>Messages</IonLabel>
+            </IonItem>
+            <IonItem>
+              <IonIcon name="settings" slot="start"></IonIcon>
+              <IonLabel>Settings</IonLabel>
+            </IonItem>
+          </IonList>
+        </IonContent>
+      </IonMenu>
+dff
+    </IonReactRouter>
+
+
       <IonReactRouter>
+
         <IonTabs>
           <IonRouterOutlet>
             <Route path="/home" component={Home} exact={true} />
@@ -54,6 +111,7 @@ function App() {
             <IonTabButton tab="tab3" href='/tab2'>
               <IonIcon icon={business} />
               <IonLabel>Tab 3</IonLabel>
+              <IonBadge>0</IonBadge>
             </IonTabButton>
 
             <IonTabButton tab="tab4" href='/tab2'>

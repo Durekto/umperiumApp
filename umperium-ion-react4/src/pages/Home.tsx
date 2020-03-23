@@ -6,11 +6,7 @@ import './Home.css';
 function Home() {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Home</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+
       <IonContent className='App'>
         {/* <IonHeader collapse="condense">
           <IonToolbar>
