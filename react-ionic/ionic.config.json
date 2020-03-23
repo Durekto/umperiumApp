@@ -1,0 +1,7 @@
+{
+  "name": "Umperium React IonicV4",
+  "type": "custom",
+  "integrations": {
+    "cordova": {}
+  }
+}
