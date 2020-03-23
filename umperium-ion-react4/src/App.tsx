@@ -21,14 +21,13 @@ import {
   IonSplitPane,
   IonMenuToggle,
   IonNav,
-  IonButton,
 } from '@ionic/react';
 import {} from '@ionic/core';
 import { IonReactRouter } from '@ionic/react-router';
 import { Route, Redirect } from 'react-router-dom';
 
 import Home from './pages/Home';
-import Tab2 from './pages/Tab2';
+import Tab1 from './pages/Tab1';
 
 //#region CSS
 /* Core CSS required for Ionic components to work properly */
@@ -80,7 +79,6 @@ function App() {
                   <IonItem href='/home'>
                     <IonIcon icon={home} slot="start"></IonIcon>
                     <IonLabel>Home</IonLabel>
-                    {/* <IonButton fill='clear' class='itemBtns'>Home</IonButton> */}
                   </IonItem>
                   <IonItem href='/profile'>
                     <IonIcon icon={person} slot="start"></IonIcon>
@@ -103,9 +101,9 @@ function App() {
         <IonReactRouter>
           <IonTabs>
               <IonRouterOutlet>
-                  <Route path="/tab1" component={Tab2} exact={true} />
-                  <Route path="/tab2" component={Tab2} exact={true} />
-                  <Route path="/tab3" component={Tab2} exact={true} />
+                  <Route path="/tab1" component={Tab1} exact={true} />
+                  <Route path="/tab2" component={Tab1} exact={true} />
+                  <Route path="/tab3" component={Tab1} exact={true} />
                   <Route path="/home" component={Home} exact={true} />
                   <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
               </IonRouterOutlet>

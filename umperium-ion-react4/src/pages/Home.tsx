@@ -1,22 +1,11 @@
 import React from 'react';
 import logo from '../logo.svg';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonLabel, IonImg,IonMenu } from '@ionic/react';
-import './Home.css';
+import { IonContent, IonHeader, IonPage, IonLabel, IonImg } from '@ionic/react';
 
 function Home() {
   return (
     <IonPage>
-        {/*      <IonHeader>*/}
-        {/*        <IonToolbar>*/}
-        {/*          <IonTitle>Home</IonTitle>*/}
-        {/*        </IonToolbar>*/}
-        {/*      </IonHeader>*/}
       <IonContent className='App'>
-         <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Home</IonTitle>
-          </IonToolbar>
-        </IonHeader>
         <IonHeader className='App-header'>
             <IonImg src={logo} className='App-logo' alt="logo"></IonImg>
             <p>
@@ -35,6 +24,6 @@ function Home() {
       </IonContent>
     </IonPage>
   );
-};
+}
 
 export default Home;

@@ -37,6 +37,6 @@
   }
 }
 
-
-
-
+.menu-content-open {
+  pointer-events: all !important;
+}
