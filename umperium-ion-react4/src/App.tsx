@@ -12,12 +12,6 @@ import {
   IonHeader,
   IonList,
   IonItem,
-<<<<<<< HEAD
-  IonFab,
-  IonFabButton,
-
-
-=======
   IonContent,
   IonMenu,
   IonToolbar,
@@ -28,7 +22,6 @@ import {
   IonMenuToggle,
   IonNav,
   IonButton,
->>>>>>> 164278b1353f30e3982a5bb057a5804d8051cbf6
 } from '@ionic/react';
 import {} from '@ionic/core';
 import { IonReactRouter } from '@ionic/react-router';
