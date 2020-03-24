@@ -123,10 +123,6 @@ function App() {
                     <IonIcon icon={settings} slot="start"></IonIcon>
                     <IonLabel>Элита</IonLabel>
                   </IonItem>
-
-
-
-
                 </IonMenuToggle>
               </IonList>
             </IonContent>
