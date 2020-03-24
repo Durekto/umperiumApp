@@ -9,28 +9,39 @@ import {
 	IonLabel,
 	IonRouterOutlet,
 	IonIcon,
-  IonHeader,
-  IonList,
-  IonItem,
-  IonContent,
-  IonMenu,
-  IonToolbar,
-  IonTitle,
-  IonButtons,
-  IonMenuButton,
-  IonSplitPane,
-  IonMenuToggle,
-  IonNav,
-  IonSearchbar,
-  IonModal,
-  IonButton,
-  IonAlert,
+    IonHeader,
+    IonList,
+    IonItem,
+    IonContent,
+    IonMenu,
+    IonToolbar,
+    IonTitle,
+    IonButtons,
+    IonMenuButton,
+    IonSplitPane,
+    IonMenuToggle,
+    IonNav,
+    IonSearchbar,
+    IonModal,
+    IonButton,
+    IonAlert,
+    IonCard,
+    IonCardContent,
+    IonCardHeader,
+    IonCardSubtitle,
+    IonCardTitle,
+    IonAvatar,
+
 
 } from '@ionic/react';
 import {} from '@ionic/core';
 import { IonReactRouter } from '@ionic/react-router';
 import { Route, Redirect } from 'react-router-dom';
 import { useState } from 'react';
+
+// import { library, icon } from '@fortawesome/fontawesome-svg-core';
+// import { faCamera } from '@fortawesome/free-solid-svg-icons';
+
 
 
 import Home from './pages/Home';
@@ -58,6 +69,10 @@ import { home, person, chatbubbles, settings, informationCircle } from 'ionicons
 
 function App() {
     const [showModal, setShowModal] = useState(false);
+    // library.add(faCamera);
+    //
+    // const camera = icon({ prefix: 'fas', iconName: 'camera' });
+
 
     return (
 
@@ -74,7 +89,29 @@ function App() {
 
                   <IonModal isOpen={showModal}>
                       <IonSearchbar></IonSearchbar>
+                      <IonCard>
+                          <IonCardHeader className="wrapperForUserInfo">
 
+                              <IonList>
+                                  <IonItem>
+                                      <IonAvatar slot="start">
+                                          <img src="./user.jpg" alt=""/>
+                                      </IonAvatar>
+                                      <IonLabel>User name</IonLabel>
+                                      <img className="userCountry" src="./RUS.png" alt=""/>
+                                      <img className="gem" src="./gem.svg" alt=""/>
+                                      {/*<i className="fa fa-gem"></i>*/}
+                                  </IonItem>
+                              </IonList>
+                              {/*<IonCardSubtitle>Card Subtitle</IonCardSubtitle>*/}
+                              {/*<IonCardTitle>Card Title</IonCardTitle>*/}
+                          </IonCardHeader>
+
+                          <IonCardContent>
+                              Keep close to Nature's heart... and break clear away, once in awhile,
+                              and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                          </IonCardContent>
+                      </IonCard>
                       <IonButton onClick={() => setShowModal(false)}>Close Search</IonButton>
                   </IonModal>
                   <IonButton className="btnSearch" slot='end' onClick={() => setShowModal(true)}>
