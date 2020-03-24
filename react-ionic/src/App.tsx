@@ -77,7 +77,6 @@ function App() {
     return (
 
       <IonApp>
-
         <IonHeader id='common-header'>
           <IonToolbar color='dark' className="wrapperHeader">
               <div className="wrapperHeader">
@@ -94,7 +93,7 @@ function App() {
 
                   <IonModal isOpen={showModal}>
                       <IonSearchbar></IonSearchbar>
-                      <IonCard>
+                      <IonCard class="wrapperCard">
                           <IonCardHeader className="wrapperForUserInfo">
 
                               <IonList>
@@ -138,7 +137,7 @@ function App() {
           <IonMenu menuId='main-menu' contentId='menu-items' type='overlay'>
             <IonHeader className="userInfo">
                 <div>
-                <img className="BgImgUserMenu" src="/imgBG2.jpg" alt=""/>
+                <img className="BgImgUserMenu" src="/imgBG5.jpg" alt=""/>
                 <div className="wrapperUserImgName">
                     <img className="userAvatar" src="/user.jpg" alt=""/>
                     <span>User name</span>
