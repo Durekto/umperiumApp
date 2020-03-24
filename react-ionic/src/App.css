@@ -52,8 +52,15 @@
 .btnSearch .button-native {
   opacity: 0 !important;
 }
-.button-native{
-background-color: rgb(255,255,255) !important;
+/*.btnSearch:hover {*/
+/*  --background: rgba(255,255,255,0) !important;*/
+/*}*/
+
+.btnSearch {
+  --background: rgba(255,255,255,0) !important;
+  --border-style:none !important;
+  --border-color:none !important;
+  box-shadow: none !important;
 }
 .userAvatar{
   height: 75px;
