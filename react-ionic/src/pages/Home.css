@@ -1,7 +1,6 @@
 .wrapperForUserInfo{
     padding-left: 0 !important;
-
 }
-.contentPage{
-    position: absolute;
+.gap{
+    height: 102px;
 }

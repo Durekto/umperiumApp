@@ -41,12 +41,20 @@
 .menu-content-open {
   pointer-events: all !important;
 }
+/*.ion-page div{*/
+/*padding-top: 102px;*/
+/*}*/
 /*.wrapperHeader{*/
 /*  display: flex;*/
 /*  flex-direction: row;*/
 /*}*/
 /*.gapForHeaderAndContent{*/
+/*  margin-top: 102px !important;*/
+/*  margin-bottom: 102px !important;*/
 /*  min-height: 102px !important;*/
+/*  width: 200px;*/
+/*  background-color: black;*/
+/*  z-index: 1111;*/
 /*}*/
 /*.ion-page:nth-last-child{*/
 /*  position: static !important;*/
