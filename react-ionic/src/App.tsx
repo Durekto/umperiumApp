@@ -21,10 +21,17 @@ import {
   IonSplitPane,
   IonMenuToggle,
   IonNav,
+  IonSearchbar,
+  IonModal,
+  IonButton,
+  IonAlert,
+
 } from '@ionic/react';
 import {} from '@ionic/core';
 import { IonReactRouter } from '@ionic/react-router';
 import { Route, Redirect } from 'react-router-dom';
+import { useState } from 'react';
+
 
 import Home from './pages/Home';
 import Tab1 from './pages/Tab1';
@@ -50,19 +57,31 @@ import '@ionic/react/css/display.css';
 import { home, person, chatbubbles, settings, informationCircle } from 'ionicons/icons';
 
 function App() {
-  return (
+    const [showModal, setShowModal] = useState(false);
+
+    return (
 
       <IonApp>
 
         <IonHeader id='common-header'>
-          <IonToolbar color='dark'>
+          <IonToolbar color='dark' className="wrapperHeader">
             <IonButtons slot='start'>
                 <IonMenuButton menu='main-menu'></IonMenuButton>
             </IonButtons>
-            <IonTitle>
-              <IonItem button href='/home' color='dark'>Umperium Image</IonItem>
-            </IonTitle>
+              <IonItem  button href='/home' color='dark'>
+                  <img className="logo" src="/logo.png" alt=""/>
+              </IonItem>
+
+                  <IonModal isOpen={showModal}>
+                      <IonSearchbar></IonSearchbar>
+
+                      <IonButton onClick={() => setShowModal(false)}>Close Search</IonButton>
+                  </IonModal>
+                  <IonButton className="btnSearch" slot='end' onClick={() => setShowModal(true)}>
+                      <img src="./whiteSearch.png" alt=""/>
+                  </IonButton>
           </IonToolbar>
+
         </IonHeader>
         <IonNav></IonNav>
 
