@@ -73,7 +73,7 @@ function App() {
                 <img className="BgImgUserMenu" src="/imgBG2.jpg" alt=""/>
                 <div className="wrapperUserImgName">
                     <img className="userAvatar" src="/user.jpg" alt=""/>
-                    <span>Sobaka Sutulay</span>
+                    <span>User name</span>
                 </div>
                 </div>
               <IonToolbar>
@@ -83,10 +83,10 @@ function App() {
             <IonContent id='menu-items'>
               <IonList>
                 <IonMenuToggle menu='main-menu'>
-                  <IonItem href='/home'>
-                    <IonIcon icon={home} slot="start"></IonIcon>
-                    <IonLabel>Моя страница</IonLabel>
-                  </IonItem>
+                  {/*<IonItem href='/home'>*/}
+                  {/*  <IonIcon icon={home} slot="start"></IonIcon>*/}
+                  {/*  <IonLabel>Моя страница</IonLabel>*/}
+                  {/*</IonItem>*/}
                   <IonItem href='/profile'>
                     <IonIcon icon={person} slot="start"></IonIcon>
                     <IonLabel>Счет</IonLabel>
@@ -104,7 +104,23 @@ function App() {
 
                   <IonItem href='/settings'>
                     <IonIcon icon={settings} slot="start"></IonIcon>
-                    <IonLabel>Лента</IonLabel>
+                    <IonLabel>Центр монетизации</IonLabel>
+                  </IonItem>
+                    <IonItem href='/settings'>
+                    <IonIcon icon={settings} slot="start"></IonIcon>
+                    <IonLabel>Служба поддержки</IonLabel>
+                  </IonItem>
+                    <IonItem href='/settings'>
+                    <IonIcon icon={settings} slot="start"></IonIcon>
+                    <IonLabel>Вопросы - ответы</IonLabel>
+                  </IonItem>
+                    <IonItem href='/settings'>
+                    <IonIcon icon={settings} slot="start"></IonIcon>
+                    <IonLabel>Лидеры мнений</IonLabel>
+                </IonItem>
+                    <IonItem href='/settings'>
+                    <IonIcon icon={settings} slot="start"></IonIcon>
+                    <IonLabel>Элита</IonLabel>
                   </IonItem>
 
 
@@ -122,6 +138,7 @@ function App() {
                   <Route path="/tab1" component={Tab1} exact={true} />
                   <Route path="/tab2" component={Tab1} exact={true} />
                   <Route path="/tab3" component={Tab1} exact={true} />
+                  <Route path="/tab4" component={Tab1} exact={true} />
                   <Route path="/home" component={Home} exact={true} />
                   <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
               </IonRouterOutlet>
@@ -129,15 +146,19 @@ function App() {
               <IonTabBar slot="bottom">
                   <IonTabButton tab="home" href="/tab1">
                       <IonIcon icon={home} />
-                      <IonLabel>Tab 1</IonLabel>
+                      <IonLabel>Главная</IonLabel>
                   </IonTabButton>
                   <IonTabButton tab="settings" href="/tab2">
                       <IonIcon icon={settings} />
-                      <IonLabel>Tab 2</IonLabel>
+                      <IonLabel>Написать пост</IonLabel>
                   </IonTabButton>
                   <IonTabButton tab="about" href="/tab3">
                       <IonIcon icon={informationCircle} />
-                      <IonLabel>Tab 3</IonLabel>
+                      <IonLabel>Моя страница</IonLabel>
+                  </IonTabButton>
+                  <IonTabButton tab="about" href="/tab4">
+                      <IonIcon icon={informationCircle} />
+                      <IonLabel>Магазин влияния</IonLabel>
                   </IonTabButton>
               </IonTabBar>
           </IonTabs>
