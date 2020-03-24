@@ -1,0 +1,15 @@
+.ion-page ._login {
+    background: #eff3f6 !important;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+._login-logo {
+    width: 100px;
+    height: 100px;
+}
+
+._login-social-network {
+    width: 16px;
+    height: 16px;
+}
