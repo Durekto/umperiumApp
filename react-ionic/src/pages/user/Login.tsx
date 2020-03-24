@@ -15,15 +15,16 @@ function Login() {
     return(
         <IonPage>
             <IonContent class='_login'>
-                <IonHeader>
-                    <IonToolbar></IonToolbar>
-                </IonHeader>
+                <div className='card-body'>
+                    <div className='text-center'>
+                        <a href='#'>
+                            <IonImg src='/login/logo-black-title.png' alt='logo' class='_login-logo'></IonImg>
+                        </a>
+                    </div>
 
-                {/* <div> */}
-                    <IonImg src='/login/logo-black-title.png' alt='logo' class='_login-logo'></IonImg>
-                    <IonInput type='email' placeholder='E-mail'></IonInput>
-                    <IonInput type='password' placeholder='Пароль'></IonInput>
-                    <IonLabel><IonCheckbox></IonCheckbox>Запомнить меня</IonLabel>
+                    <IonInput class='form-control' type='email' placeholder='E-mail'></IonInput>
+                    <IonInput class='form-control' type='password' placeholder='Пароль'></IonInput>
+                    <IonLabel class='custom-control-label'><IonCheckbox class='custom-control'></IonCheckbox>Запомнить меня</IonLabel>
                     <IonButton type='submit'>Войти</IonButton>
                     <IonItem>
                         <IonImg src='/login/vk.png' alt='vk' class='_login-social-network'></IonImg>
@@ -33,7 +34,7 @@ function Login() {
                         <IonImg src='/login/f.png' alt='fb' class='_login-social-network'></IonImg>
                         <a href='#/fb'>Войти через FB</a>
                     </IonItem>
-                {/* </div> */}
+                </div>
             </IonContent>
         </IonPage>
     );
