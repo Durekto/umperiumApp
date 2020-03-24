@@ -68,8 +68,15 @@ function App() {
 
         {/* <IonSplitPane> */}
           <IonMenu menuId='main-menu' contentId='menu-items' type='overlay'>
-            <IonHeader>
-              <IonToolbar color="dark">
+            <IonHeader className="userInfo">
+                <div>
+                <img className="BgImgUserMenu" src="/imgBG2.jpg" alt=""/>
+                <div className="wrapperUserImgName">
+                    <img className="userAvatar" src="/user.jpg" alt=""/>
+                    <span>Sobaka Sutulay</span>
+                </div>
+                </div>
+              <IonToolbar>
                 <IonTitle>Menu</IonTitle>
               </IonToolbar>
             </IonHeader>
@@ -78,20 +85,31 @@ function App() {
                 <IonMenuToggle menu='main-menu'>
                   <IonItem href='/home'>
                     <IonIcon icon={home} slot="start"></IonIcon>
-                    <IonLabel>Home</IonLabel>
+                    <IonLabel>Моя страница</IonLabel>
                   </IonItem>
                   <IonItem href='/profile'>
                     <IonIcon icon={person} slot="start"></IonIcon>
-                    <IonLabel>Profile</IonLabel>
+                    <IonLabel>Счет</IonLabel>
                   </IonItem>
                   <IonItem href='/chat'>
                     <IonIcon icon={chatbubbles} slot="start"></IonIcon>
-                    <IonLabel>Messages</IonLabel>
+                    <IonLabel>Настройки</IonLabel>
                   </IonItem>
                   <IonItem href='/settings'>
                     <IonIcon icon={settings} slot="start"></IonIcon>
-                    <IonLabel>Settings</IonLabel>
+                    <IonLabel>Лента</IonLabel>
                   </IonItem>
+
+                    <div className="hrBorder"></div>
+
+                  <IonItem href='/settings'>
+                    <IonIcon icon={settings} slot="start"></IonIcon>
+                    <IonLabel>Лента</IonLabel>
+                  </IonItem>
+
+
+
+
                 </IonMenuToggle>
               </IonList>
             </IonContent>

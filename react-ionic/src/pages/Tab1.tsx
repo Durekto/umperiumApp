@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import {IonApp, IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonThumbnail,IonLabel,IonItem} from '@ionic/react';
 
 function Tab1() {
   return (
@@ -12,10 +12,12 @@ function Tab1() {
       <IonContent>
         <IonHeader>
           <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
+              <IonTitle>Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
+
       </IonContent>
+
     </IonPage>
   );
 };

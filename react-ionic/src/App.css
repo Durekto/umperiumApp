@@ -40,3 +40,28 @@
 .menu-content-open {
   pointer-events: all !important;
 }
+.BgImgUserMenu{
+
+}
+.userAvatar{
+  height: 75px;
+  width: 75px;
+  border-radius: 50% ;
+  margin-left: 25%;
+  margin-bottom: 10%;
+}
+.wrapperUserImgName{
+  position: absolute;
+  z-index: 11111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 15%;
+  left: 25%;
+  font-size: 20px;
+
+}
+.hrBorder{
+  border-bottom: 1px solid black;
+}
