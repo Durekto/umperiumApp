@@ -133,14 +133,20 @@ function App() {
         {/* </IonSplitPane> */}
 
         <IonReactRouter>
+          {/* <IonRouterOutlet>
+            <Route path='/auth' component={Login} exact={true} />
+            <Route path="/home" component={Home} exact={true} />
+            <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
+          </IonRouterOutlet> */}
+
           <IonTabs>
               <IonRouterOutlet>
                   <Route path="/tab1" component={Tab1} exact={true} />
                   <Route path="/tab2" component={Tab1} exact={true} />
                   <Route path="/tab3" component={Tab1} exact={true} />
                   <Route path="/tab4" component={Tab1} exact={true} />
-                  <Route path="/home" component={Home} exact={true} />
                   <Route path='/auth' component={Login} exact={true} />
+                  <Route path="/home" component={Home} exact={true} />
                   <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
               </IonRouterOutlet>
 
