@@ -80,12 +80,17 @@ function App() {
 
         <IonHeader id='common-header'>
           <IonToolbar color='dark' className="wrapperHeader">
+              <div className="wrapperHeader">
+                  <div>
             <IonButtons slot='start'>
                 <IonMenuButton menu='main-menu'></IonMenuButton>
             </IonButtons>
+                  </div>
+                  <div>
               <IonItem  button href='/home' color='dark'>
                   <img className="logo" src="/logo.png" alt=""/>
               </IonItem>
+                  </div>
 
                   <IonModal isOpen={showModal}>
                       <IonSearchbar></IonSearchbar>
@@ -100,11 +105,9 @@ function App() {
                                       <IonLabel>User name</IonLabel>
                                       <img className="userCountry" src="./RUS.png" alt=""/>
                                       <img className="gem" src="./gem.svg" alt=""/>
-                                      {/*<i className="fa fa-gem"></i>*/}
                                   </IonItem>
                               </IonList>
-                              {/*<IonCardSubtitle>Card Subtitle</IonCardSubtitle>*/}
-                              {/*<IonCardTitle>Card Title</IonCardTitle>*/}
+
                           </IonCardHeader>
 
                           <IonCardContent>
@@ -114,9 +117,18 @@ function App() {
                       </IonCard>
                       <IonButton onClick={() => setShowModal(false)}>Close Search</IonButton>
                   </IonModal>
+                  <div>
                   <IonButton className="btnSearch" slot='end' onClick={() => setShowModal(true)}>
                       <img src="./whiteSearch.png" alt=""/>
                   </IonButton>
+                  </div>
+              </div>
+              <div className="wrapperDownHeaderMenu">
+                  <span>Популярное</span>
+                  <span>Обсуждение</span>
+                  <span>Сила Мысли</span>
+                  <span>Новое</span>
+              </div>
           </IonToolbar>
 
         </IonHeader>
