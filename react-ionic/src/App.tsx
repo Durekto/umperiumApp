@@ -29,7 +29,6 @@ import { Route, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import Tab1 from './pages/Tab1';
 import Login from './pages/user/Login';
-
 //#region CSS
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
