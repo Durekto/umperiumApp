@@ -28,6 +28,7 @@ import { Route, Redirect } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Tab1 from './pages/Tab1';
+import Login from './pages/user/Login';
 
 //#region CSS
 /* Core CSS required for Ionic components to work properly */
@@ -123,19 +124,20 @@ function App() {
                   <Route path="/tab2" component={Tab1} exact={true} />
                   <Route path="/tab3" component={Tab1} exact={true} />
                   <Route path="/home" component={Home} exact={true} />
+                  <Route path='/auth' component={Login} exact={true} />
                   <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
               </IonRouterOutlet>
 
               <IonTabBar slot="bottom">
-                  <IonTabButton tab="home" href="/tab1">
+                  <IonTabButton tab="tab1" href="/tab1">
                       <IonIcon icon={home} />
                       <IonLabel>Tab 1</IonLabel>
                   </IonTabButton>
-                  <IonTabButton tab="settings" href="/tab2">
+                  <IonTabButton tab="tab2" href="/tab2">
                       <IonIcon icon={settings} />
                       <IonLabel>Tab 2</IonLabel>
                   </IonTabButton>
-                  <IonTabButton tab="about" href="/tab3">
+                  <IonTabButton tab="tab3" href="/tab3">
                       <IonIcon icon={informationCircle} />
                       <IonLabel>Tab 3</IonLabel>
                   </IonTabButton>
