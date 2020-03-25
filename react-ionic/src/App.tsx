@@ -49,6 +49,7 @@ import { useState } from 'react';
 
 import Home from './pages/Home';
 import Tab1 from './pages/Tab1';
+import userPage from "./pages/user/userPage";
 import Login from './pages/user/Login';
 
 //#region CSS
@@ -178,6 +179,8 @@ function App() {
           </IonToolbar>
         </IonHeader>
 
+          <IonReactRouter>
+
         <IonMenu menuId='main-menu' contentId='menu-items' type='overlay' maxEdgeStart={50}>
           <IonHeader className="userInfo">
               <div>
@@ -238,7 +241,7 @@ function App() {
           </IonContent>
         </IonMenu>
 
-        <IonReactRouter>
+
           {/* <IonRouterOutlet>
             <Route path='/auth' component={Login} exact={true} />
             <Route path="/home" component={Home} exact={true} />
@@ -251,7 +254,7 @@ function App() {
               <Route path="/tab2" component={Tab1} exact={true} />
               <Route path="/tab3" component={Tab1} exact={true} />
               <Route path="/profile" component={Tab1} exact={true} />
-              <Route path='/auth' component={Login} exact={true} />
+              <Route path='/userPage' component={userPage} exact={true} />
               <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
             </IonRouterOutlet>
 
@@ -286,7 +289,7 @@ function App() {
                   {/* <IonIcon src="/tab-icons/market.png" /> */}
                   {/* <IonLabel>Моя страница</IonLabel> */}
               </IonTabButton>
-              <IonTabButton tab="my-page" href="/auth">
+              <IonTabButton tab="my-page" href="/userPage">
                 <IonImg className='tab-icons' src="/tab-icons/my_page.png"></IonImg>
                   {/* <IonIcon src="/tab-icons/my_page.png" /> */}
                   {/* <IonLabel>Магазин влияния</IonLabel> */}
