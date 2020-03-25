@@ -58,12 +58,15 @@
 }
 
 .logo{
-  height: 60%;
-  margin: 0 auto;
+  /* height: 60%; */
+  height: 30px;
+  /* margin: 0 auto; */
 }
 
 .btnSearch {
-
+  margin: 0;
+  width: 48px;
+  height: 48px;
   --background: rgba(255,255,255,0) !important;
   --border-style: none !important;
   --border-color: none !important;
@@ -107,4 +110,13 @@
 }
 .wrapperCard{
   background-color:white ;
+}
+
+.tab-icons {
+  width: 32px;
+  height: 32px;
+}
+
+.btnSearch > ion-img {
+  width: 32px;
 }

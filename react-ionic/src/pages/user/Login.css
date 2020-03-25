@@ -6,9 +6,13 @@
     background: #eff3f6;
 }
 
-.ion-page ._login {
+ion-content {
     --background: #eff3f6;
-    top: 56px;
+}
+
+.ion-page ._login {
+    /* --background: #eff3f6; */
+    /* top: 56px; */
 
 
 
@@ -159,6 +163,7 @@
     --transition: background-color 15ms linear, border-color 15ms linear;
 
     width: 62px;
+    height: 34px;
     letter-spacing: normal;
     text-transform: capitalize;
 }
@@ -179,10 +184,10 @@
     /* vertical-align: middle; */
 }
 
-.ion-item-highlight > ion-label {
-    /* margin-top: 0;
-    margin-bottom: 0; */
-}
+/* .ion-item-highlight > ion-label {
+    margin-top: 0;
+    margin-bottom: 0;
+} */
 
 .ion-item-highlight ion-checkbox {
     margin-left: 0;
