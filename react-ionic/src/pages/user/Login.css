@@ -1,26 +1,13 @@
-.ion-page {
-    background: #eff3f6;
-}
-
-ion-content {
-    --background: #eff3f6;
-}
+#post-boosting {--my-post-boosting-display: none;}
+div.ion-page.disable-boost {--my-header-height: 62px;}
 
 .ion-page ._login {
-    /* --background: #eff3f6; */
-    /* top: 56px; */
-
-
-
-    margin: 7.5% auto;
+    margin: 0 auto; /* 7.5% auto */
     width: 90%;
 	max-width: 460px;
     position: relative;
 
     align-self: center;
-
-    --ion-font-family: Calibri;
-    font-size: 14px !important;
 }
 
 ._login-logo {
@@ -120,7 +107,7 @@ ion-content {
 }
 
 ._login .card {
-    margin-top: 5%;
+    /* margin-top: 5%; */
     border: 7px double #242c6d;
     border-radius: 10px;
     -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.05);

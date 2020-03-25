@@ -15,7 +15,7 @@ import {
 
 function Login() {
     return(
-        <IonPage>
+        <IonPage className='disable-boost'>
             <IonContent>
                 <div className='_login'>
                     <div className='card'>

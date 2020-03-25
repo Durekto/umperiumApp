@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+//#region import
 import {
     IonApp,
     IonTabs,
@@ -20,7 +21,7 @@ import {
     IonMenuButton,
     // IonSplitPane,
     IonMenuToggle,
-    IonNav,
+    // IonNav,
     IonSearchbar,
     IonModal,
     IonButton,
@@ -33,23 +34,23 @@ import {
     IonAvatar,
     IonImg,
     IonSelect,
-    IonSelectOption, IonAlert, IonBadge,
-
-
+    IonSelectOption, 
+    IonAlert, 
+    IonBadge,
 } from '@ionic/react';
 import {} from '@ionic/core';
 import { IonReactRouter } from '@ionic/react-router';
 import { Route, Redirect } from 'react-router-dom';
 import { useState } from 'react';
+//#endregion
 
 // import { library, icon } from '@fortawesome/fontawesome-svg-core';
 // import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
-
-
 import Home from './pages/Home';
 import Tab1 from './pages/Tab1';
 import Login from './pages/user/Login';
+
 //#region CSS
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -68,7 +69,7 @@ import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 //#endregion
 
-import { home, person, chatbubbles, settings, informationCircle } from 'ionicons/icons';
+import { person, chatbubbles, settings } from 'ionicons/icons';
 
 function App() {
     const [showAlertComplain, setShowAlertComplain] = useState(false);
@@ -78,9 +79,7 @@ function App() {
     //
     // const camera = icon({ prefix: 'fas', iconName: 'camera' });
 
-
     return (
-
       <IonApp>
         <IonHeader id='common-header'>
           <IonToolbar color='dark' className="wrapperHeader">
@@ -177,76 +176,9 @@ function App() {
                 <span>Новое</span>
             </div>
           </IonToolbar>
-            <IonToolbar>
-                <IonButton color="danger" expand="full" >
-                    <div className="wrapperTextBtnProdvi" >
-                        <div>
-                            <img className="icoInBtnProdvi rocket" aria-hidden="true" src="./rocket.svg" alt=""/><span>PRoдвижение</span>
-                        </div>
-                        <div>
-                            <span>Разместить за 1000</span><img className="icoInBtnProdvi money" src="./moneyWhite.png" alt=""/>
-                        </div>
-                    </div>
-                </IonButton>
-                <div className="wrapperHeaderDownFilter">
-
-                       <div>
-                           <IonButton className="btnFilter"><img src="./filterBlack.png" alt=""/></IonButton>
-                       </div>
-
-                        <div className="selectHeader">
-
-                            <IonSelect placeholder="Время">
-                                <IonSelectOption value="hour">Час</IonSelectOption>
-                                <IonSelectOption value="day">День</IonSelectOption>
-                                <IonSelectOption value="week">Неделя</IonSelectOption>
-                                <IonSelectOption value="month">Месяц</IonSelectOption>
-                                <IonSelectOption value="AllTime">Все время</IonSelectOption>
-                            </IonSelect>
-                        </div>
-
-                    <div className="selectHeader">
-                            <IonSelect placeholder="Страны">
-                                <IonSelectOption value="ru">Россия</IonSelectOption>
-                                <IonSelectOption value="ua">Украина</IonSelectOption>
-                                <IonSelectOption value="blr">Белоруссия</IonSelectOption>
-                                <IonSelectOption value="kaz">Казахстан</IonSelectOption>
-                                <IonSelectOption value="ge">Грузия</IonSelectOption>
-                                <IonSelectOption value="AllCountry">All Time</IonSelectOption>
-                            </IonSelect>
-                        </div>
-
-                    <div>
-                        <IonButton className="btnGem"> <img className="gem" src="./gem.svg" alt=""/></IonButton>
-
-
-                    </div>
-
-                    <div className="selectHeader">
-                        <IonSelect placeholder="Элита">
-                            <IonSelectOption value="ru">Элита</IonSelectOption>
-                            <IonSelectOption value="ua">Все разделы</IonSelectOption>
-                            <IonSelectOption value="blr">Власть / Политика</IonSelectOption>
-                            <IonSelectOption value="kaz">Медиа / СМИ</IonSelectOption>
-                            <IonSelectOption value="ge">Культура / Искусство</IonSelectOption>
-                            <IonSelectOption value="AllCountry">Бизнес / Экономика</IonSelectOption>
-                            <IonSelectOption value="AllCountry">Наука / Образование</IonSelectOption>
-                            <IonSelectOption value="AllCountry">Техника / Транспорт</IonSelectOption>
-                            <IonSelectOption value="AllCountry">Путишествия / Досуг</IonSelectOption>
-                            <IonSelectOption value="AllCountry">Благотворительность</IonSelectOption>
-                            <IonSelectOption value="AllCountry">Спорт / Здоровье</IonSelectOption>
-                            <IonSelectOption value="AllCountry">Корпоративные страницы</IonSelectOption>
-                        </IonSelect>
-                    </div>
-
-                </div>
-            </IonToolbar>
-
         </IonHeader>
 
-
-
-        <IonMenu menuId='main-menu' contentId='menu-items' type='overlay'>
+        <IonMenu menuId='main-menu' contentId='menu-items' type='overlay' maxEdgeStart={50}>
           <IonHeader className="userInfo">
               <div>
               <img className="BgImgUserMenu" src="/imgBG5.jpg" alt=""/>
@@ -322,6 +254,21 @@ function App() {
               <Route path='/auth' component={Login} exact={true} />
               <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
             </IonRouterOutlet>
+
+            <IonTabBar slot='top' color='dark'>
+              <IonTabButton tab="home" href="/home">
+                <IonLabel>Популярное</IonLabel>
+              </IonTabButton>
+              <IonTabButton tab="home" href="/home">
+                <IonLabel>Популярное</IonLabel>
+              </IonTabButton>
+              <IonTabButton tab="home" href="/home">
+                <IonLabel>Популярное</IonLabel>
+              </IonTabButton>
+              <IonTabButton tab="home" href="/home">
+                <IonLabel>Популярное</IonLabel>
+              </IonTabButton>
+            </IonTabBar>
 
             <IonTabBar slot="bottom" color='dark'>
               <IonTabButton tab="home" href="/home">
