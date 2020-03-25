@@ -17,6 +17,8 @@ function Login() {
     return(
         <IonPage>
             <IonContent className='_login'>
+                <div className="gap"></div>
+
                 <div className='card'>
                     <div className='card-body'>
                         <div className='text-center'>
