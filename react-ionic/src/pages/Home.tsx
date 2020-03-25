@@ -1,11 +1,9 @@
 import React from 'react';
-import logo from '../logo.svg';
+
 import {
     IonContent,
-    IonHeader,
     IonPage,
     IonLabel,
-    IonImg,
     IonCardHeader,
     IonList,
     IonItem,

@@ -6,12 +6,17 @@
     --background: #eff3f6;
     top: 56px;
 
+
+
     margin: 7.5% auto;
     width: 90%;
 	max-width: 460px;
     position: relative;
 
     align-self: center;
+
+    --ion-font-family: Calibri;
+    font-size: 14px !important;
 }
 
 ._login-logo {
@@ -24,29 +29,66 @@
 ._login-social-network {
     width: 16px;
     height: 16px;
+
+    margin-right: 5px;
 }
 
 ._login .form-horizontal {
     margin-top: 20px;
-    font-size: 14px;
-    font-family: Calibri, sans-serif;
-    font-weight: 400;
+    padding: 0 16px 16px;
+
+    text-align: center;
+    /* font-size: 14px; */
 }
+
+/* ._login .form-group {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-left: 0;
+
+    --min-height: 0;
+    --padding-top: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-bottom: 0;
+    --inner-padding-top: 0;
+    --inner-padding-right: 0;
+    --inner-padding-bottom: 0;
+    --inner-padding-left: 0;
+
+    display: flex;
+    justify-content: center;
+} */
 
 ._login .form-control {
     display: block;
     width: 100%;
     height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
-    line-height: 1.5;
-    color: #495057;
     background-color: #ffffff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
+    font-size: 14px;
+    text-align: left;
+
     margin-bottom: 1rem;
+
+    /* --min-height: 24px; */
+
+    --color: #495057;
+    --padding-start: 12px;
+    --placeholder-color: #757d85;
+    /* --placeholder-font-style: sans-serif; */
+    --placeholder-font-weight: 500;
+    --placeholder-opacity: 100%;
+}
+
+._login .form-control:focus {
+    border-color: #242c6d;
 }
 
 /* ._login .form-control {
@@ -91,6 +133,8 @@
 	-ms-flex: 1 1 auto;
 	flex: 1 1 auto;
     padding: 1.25rem;
+
+    /* padding: 20px; */
 }
 
 ._login .text-center {
@@ -109,6 +153,10 @@
     --box-shadow: none;
     --color: #ffffff;
     --transition: background-color 15ms linear, border-color 15ms linear;
+
+    width: 62px;
+    letter-spacing: normal;
+    text-transform: capitalize;
 }
 
 .login-button:hover {
@@ -118,8 +166,34 @@
 
 .ion-item-highlight {
     --background-hover: #ffffff;
+    --padding-start: 0;
+
+    font-size: 14px;
+    --color: #2d3b48;
+
+    /* height: 24px; */
+    /* vertical-align: middle; */
+}
+
+.ion-item-highlight > ion-label {
+    /* margin-top: 0;
+    margin-bottom: 0; */
 }
 
 .ion-item-highlight ion-checkbox {
-    margin-left: -10px;
+    margin-left: 0;
+    margin-right: 5px;
+
+    /* --checkmark-width: 16px; */
+    --border-color: #ced4da;
+    --border-radius: .25rem;
+    --border-style: solid;
+    --border-width: 1px;
+}
+
+.text-muted {
+    color: #ec536c !important;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
 }

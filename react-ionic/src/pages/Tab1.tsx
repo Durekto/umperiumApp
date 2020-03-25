@@ -1,5 +1,5 @@
 import React from 'react';
-import {IonApp, IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonThumbnail,IonLabel,IonItem} from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
 function Tab1() {
   return (
