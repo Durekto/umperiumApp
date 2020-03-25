@@ -32,6 +32,8 @@ import {
     // IonCardTitle,
     IonAvatar,
     IonImg,
+    IonSelect,
+    IonSelectOption,
 
 
 } from '@ionic/react';
@@ -94,18 +96,23 @@ function App() {
               <IonModal isOpen={showModal}>
                 <IonSearchbar></IonSearchbar>
                 <IonCard class="wrapperCard">
-                  <IonCardHeader className="wrapperForUserInfo">
-                    <IonList>
-                        <IonItem>
-                            <IonAvatar slot="start">
-                                <img src="./user.jpg" alt=""/>
-                            </IonAvatar>
-                            <IonLabel>User name</IonLabel>
-                            <img className="userCountry" src="./RUS.png" alt=""/>
-                            <img className="gem" src="./gem.svg" alt=""/>
-                        </IonItem>
-                    </IonList>
-                  </IonCardHeader>
+                    <IonCardHeader className="wrapperForUserInfo">
+
+                        <IonList>
+                            <IonItem>
+                                <IonAvatar slot="start">
+                                    <img src="./user.jpg" alt=""/>
+                                </IonAvatar>
+                                <IonLabel> <div className="userNameFlag"><span>User name</span>
+
+                                    <img className="userCountry picInPost" src="./RUS.png" alt=""/>
+                                    <img className="gem picInPost" src="./gem.svg" alt=""/>
+                                </div>
+                                </IonLabel>
+
+                            </IonItem>
+                        </IonList>
+                    </IonCardHeader>
                   <IonCardContent>
                       Keep close to Nature's heart... and break clear away, once in awhile,
                       and climb a mountain or spend a week in the woods. Wash your spirit clean.
@@ -115,7 +122,7 @@ function App() {
               </IonModal>
               {/* <div> */}
               <IonButton className="btnSearch" slot='end' onClick={() => setShowModal(true)}>
-                  <IonImg src='./whiteSearch.png' alt='search'></IonImg>
+                  <img src='./whiteSearch.png' alt='search'></img>
               </IonButton>
               {/* </div> */}
             </div>
@@ -126,8 +133,74 @@ function App() {
                 <span>Новое</span>
             </div>
           </IonToolbar>
+            <IonToolbar>
+                <IonButton color="danger" expand="full" >
+                    <div className="wrapperTextBtnProdvi" >
+                        <div>
+                            <img className="icoInBtnProdvi rocket" aria-hidden="true" src="./rocket.svg" alt=""/><span>PRoдвижение</span>
+                        </div>
+                        <div>
+                            <span>Разместить за 1000</span><img className="icoInBtnProdvi money" src="./moneyWhite.png" alt=""/>
+                        </div>
+                    </div>
+                </IonButton>
+                <div className="wrapperHeaderDownFilter">
+
+                       <div>
+                           <IonButton className="btnFilter"><img src="./filterBlack.png" alt=""/></IonButton>
+                       </div>
+
+                        <div className="selectHeader">
+
+                            <IonSelect placeholder="Время">
+                                <IonSelectOption value="hour">Час</IonSelectOption>
+                                <IonSelectOption value="day">День</IonSelectOption>
+                                <IonSelectOption value="week">Неделя</IonSelectOption>
+                                <IonSelectOption value="month">Месяц</IonSelectOption>
+                                <IonSelectOption value="AllTime">Все время</IonSelectOption>
+                            </IonSelect>
+                        </div>
+
+                    <div className="selectHeader">
+                            <IonSelect placeholder="Страны">
+                                <IonSelectOption value="ru">Россия</IonSelectOption>
+                                <IonSelectOption value="ua">Украина</IonSelectOption>
+                                <IonSelectOption value="blr">Белоруссия</IonSelectOption>
+                                <IonSelectOption value="kaz">Казахстан</IonSelectOption>
+                                <IonSelectOption value="ge">Грузия</IonSelectOption>
+                                <IonSelectOption value="AllCountry">All Time</IonSelectOption>
+                            </IonSelect>
+                        </div>
+
+                    <div>
+                        <IonButton className="btnGem"> <img className="gem" src="./gem.svg" alt=""/></IonButton>
+
+
+                    </div>
+
+                    <div className="selectHeader">
+                        <IonSelect placeholder="Элита">
+                            <IonSelectOption value="ru">Элита</IonSelectOption>
+                            <IonSelectOption value="ua">Все разделы</IonSelectOption>
+                            <IonSelectOption value="blr">Власть / Политика</IonSelectOption>
+                            <IonSelectOption value="kaz">Медиа / СМИ</IonSelectOption>
+                            <IonSelectOption value="ge">Культура / Искусство</IonSelectOption>
+                            <IonSelectOption value="AllCountry">Бизнес / Экономика</IonSelectOption>
+                            <IonSelectOption value="AllCountry">Наука / Образование</IonSelectOption>
+                            <IonSelectOption value="AllCountry">Техника / Транспорт</IonSelectOption>
+                            <IonSelectOption value="AllCountry">Путишествия / Досуг</IonSelectOption>
+                            <IonSelectOption value="AllCountry">Благотворительность</IonSelectOption>
+                            <IonSelectOption value="AllCountry">Спорт / Здоровье</IonSelectOption>
+                            <IonSelectOption value="AllCountry">Корпоративные страницы</IonSelectOption>
+                        </IonSelect>
+                    </div>
+
+                </div>
+            </IonToolbar>
+
         </IonHeader>
-        <IonNav></IonNav>
+
+
 
         <IonMenu menuId='main-menu' contentId='menu-items' type='overlay'>
           <IonHeader className="userInfo">

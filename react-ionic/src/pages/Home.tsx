@@ -28,9 +28,13 @@ function Home() {
                           <IonAvatar slot="start">
                               <img src="./user.jpg" alt=""/>
                           </IonAvatar>
-                          <IonLabel>User name</IonLabel>
-                          <img className="userCountry" src="./RUS.png" alt=""/>
-                          <img className="gem" src="./gem.svg" alt=""/>
+                          <IonLabel> <div className="userNameFlag"><span>User name</span>
+
+                              <img className="userCountry picInPost" src="./RUS.png" alt=""/>
+                              <img className="gem picInPost" src="./gem.svg" alt=""/>
+                          </div>
+                          </IonLabel>
+
                       </IonItem>
                   </IonList>
               </IonCardHeader>
@@ -50,9 +54,13 @@ function Home() {
                           <IonAvatar slot="start">
                               <img src="./user.jpg" alt=""/>
                           </IonAvatar>
-                          <IonLabel>User name</IonLabel>
-                          <img className="userCountry" src="./RUS.png" alt=""/>
-                          <img className="gem" src="./gem.svg" alt=""/>
+                          <IonLabel> <div className="userNameFlag"><span>User name</span>
+
+                                  <img className="userCountry picInPost" src="./RUS.png" alt=""/>
+                                  <img className="gem picInPost" src="./gem.svg" alt=""/>
+                              </div>
+                          </IonLabel>
+
                       </IonItem>
                   </IonList>
               </IonCardHeader>
@@ -72,9 +80,13 @@ function Home() {
                           <IonAvatar slot="start">
                               <img src="./user.jpg" alt=""/>
                           </IonAvatar>
-                          <IonLabel>User name</IonLabel>
-                          <img className="userCountry" src="./RUS.png" alt=""/>
-                          <img className="gem" src="./gem.svg" alt=""/>
+                          <IonLabel> <div className="userNameFlag"><span>User name</span>
+
+                              <img className="userCountry picInPost" src="./RUS.png" alt=""/>
+                              <img className="gem picInPost" src="./gem.svg" alt=""/>
+                          </div>
+                          </IonLabel>
+
                       </IonItem>
                   </IonList>
               </IonCardHeader>

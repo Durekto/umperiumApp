@@ -1,3 +1,10 @@
 .wrapperForUserInfo{
     padding-left: 0 !important;
 }
+.userNameFlag{
+    display: flex;
+    align-items: center;
+}
+.picInPost{
+    margin-left: 2% ;
+}

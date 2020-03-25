@@ -63,7 +63,7 @@
   /* margin: 0 auto; */
 }
 
-.btnSearch {
+.btnSearch,.btnGem,.btnFilter {
   margin: 0;
   width: 48px;
   height: 48px;
@@ -123,4 +123,44 @@
 
 div.ion-page {
   padding-top: calc(63px + 12px); /* Header: 63px + Margin */
+}
+.inner-scroll, .scroll-y{
+  background-color: white;
+}
+.icoInBtnProdvi{
+  /*width: 15px;*/
+  height: 15px;
+  color: white;
+}
+.rocket{
+  margin-right: 5%;
+  color: hotpink;
+
+}
+.money{
+  margin-left: 5%;
+}
+.wrapperTextBtnProdvi{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapperTextBtnProdvi div{
+  display:flex;
+  align-items: center;
+}
+.wrapperHeaderDownFilter{
+  display: flex;
+  align-items: center;
+}
+.selectHeader{
+  width: 30%;
+}
+.userNameFlag{
+  display: flex;
+  align-items: center;
+}
+.picInPost{
+  margin-left: 2% ;
 }
