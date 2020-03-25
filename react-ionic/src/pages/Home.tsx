@@ -19,7 +19,6 @@ function Home() {
   return (
     <IonPage>
       <IonContent className="contentPage">
-          <div className="gap"></div>
           <IonToolbar>
           <IonCard>
               <IonCardHeader className="wrapperForUserInfo">

@@ -120,3 +120,7 @@
 .btnSearch > ion-img {
   width: 32px;
 }
+
+div.ion-page {
+  padding-top: calc(63px + 12px); /* Header: 63px + Margin */
+}
