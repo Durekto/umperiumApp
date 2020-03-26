@@ -2,10 +2,9 @@
     --ion-font-family: Montserrat, sans-serif;
 
     --my-background-color: #eff3f6;
-    --my-header-height: 62px; /* 154px */
+    --my-header-height: 62px;
     --my-font-size: 12px;
     --my-font-weight: 500;
-    /* --my-post-boosting-display: none; */
 }
 
 body {
@@ -24,7 +23,3 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
-
-/* ion-header > div {
-    padding-top: 50px;
-} */

@@ -15,11 +15,9 @@ function Tab1() {
               <IonTitle>Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
-
       </IonContent>
-
     </IonPage>
   );
-};
+}
 
 export default Tab1;

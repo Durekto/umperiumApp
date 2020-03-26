@@ -2,22 +2,26 @@ ion-card-header{
     background-color: white;
     color: black;
 }
+
 .userCountry{
     width: 15px;
     height: 15px;
 }
+
 .userImg{
-display: flex;
+    display: flex;
     justify-content: center;
     height: auto;
     width: 100%;
 }
+
 .userImg img{
     height: 200px;
     width: 200px;
     margin: 0 !important;
 
 }
+
 .wrapperHeaderUserPage{
     min-width: 100%;
     display: flex;
@@ -25,24 +29,30 @@ display: flex;
     /*justify-content: center;*/
     align-items: center;
 }
+
 .userName{
     font-size: 1.5rem;
     font-weight: 600;
 }
+
 .countryAndFlag{
     display: flex;
 }
+
 .countryAndFlag span{
     margin-left: 10px ;
 }
+
 .icons{
     display: flex;
     width: 100%;
 }
+
 .icons img, .icoRang{
     width: 14px;
     height: 14px;
 }
+
 progress[value] {
     -webkit-appearance: none;
     appearance: none;
@@ -72,6 +82,7 @@ progress[value]::-webkit-progress-value {
     border-radius: 2px;
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
+
 progress{
     border-radius: 15px;
 }
