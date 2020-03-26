@@ -474,7 +474,7 @@ function App() {
                 {/* <IonIcon src="/tab-icons/market.png" /> */}
                 {/* <IonLabel>Моя страница</IonLabel> */}
             </IonTabButton>
-            <IonTabButton tab="my-page" href="/userPage">
+            <IonTabButton tab="my-page" href="/profile">
               <IonImg className='tab-icons' src="/tab-icons/my_page.png"></IonImg>
                 {/* <IonIcon src="/tab-icons/my_page.png" /> */}
                 {/* <IonLabel>Магазин влияния</IonLabel> */}
