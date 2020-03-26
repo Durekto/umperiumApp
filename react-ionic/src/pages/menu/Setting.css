@@ -1,0 +1,29 @@
+.wrapperAllSettingHeader{
+    display: flex;
+    justify-content: space-around;
+}
+.infoAboutYou, .social, .protection, .notification{
+    display: none;
+}
+.wrapperNotiSetting{
+    display: flex;
+
+    align-items: center;
+}
+.notiText{
+    flex:8;
+}
+.notiText div{
+    height: 50px
+}
+.notiEmail,.notiBell{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/*Для планшетов нужно будет поставить  margin-bottom:60%*/
+.notiEmail div,.notiBell div{
+    height: 50px;
+}
