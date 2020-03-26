@@ -15,8 +15,8 @@ import {
 
 function Login() {
   return(
-    <IonPage className='disable-boost'>
-      <IonContent>
+    <IonPage>
+      <IonContent className='specific-background-color'>
         <div className='_login'>
           <div className='card'>
             <div className='card-body'>

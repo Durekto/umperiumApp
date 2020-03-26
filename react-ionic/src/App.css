@@ -41,7 +41,7 @@
     pointer-events: all !important;
 }
 
-ion-content, .contentPage ion-toolbar {
+ion-content.contentPage, ion-content.specific-background-color, .contentPage ion-toolbar {
     --background: var(--my-background-color)
 }
 
@@ -220,6 +220,6 @@ div.ion-page {
     padding-top: 0;
 }
 
-ion-menu[menu-id='main-menu'] ion-content {
+/* ion-menu[menu-id='main-menu'] ion-content {
     --background: #ffffff;
-}
+} */
