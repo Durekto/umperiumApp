@@ -22,8 +22,7 @@ import {
 function userPage() {
   return (
     <IonPage>
-
-      <IonContent>
+      <IonContent className='user-page'>
         <IonCard>
             <IonCardHeader>
                 <div className="wrapperHeaderUserPage">

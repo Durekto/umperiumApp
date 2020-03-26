@@ -75,7 +75,8 @@ progress[value]::-webkit-progress-value {
 progress{
     border-radius: 15px;
 }
-ion-list,ion-item{
+
+.user-page ion-list, .user-page ion-item {
     text-align: center;
     width: 100%;
 }
