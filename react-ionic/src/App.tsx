@@ -45,6 +45,11 @@ import Home from './pages/Home';
 import Tab1 from './pages/Tab1';
 import userPage from "./pages/user/userPage";
 import Login from './pages/user/Login';
+import Monetization from './pages/menu/Monetization';
+import Support from './pages/menu/Support';
+import Question from './pages/menu/Question';
+import Rank from './pages/menu/Rank';
+import Elite from './pages/menu/Elite';
 
 //#region CSS
 /* Core CSS required for Ionic components to work properly */
@@ -382,28 +387,28 @@ function App() {
                   <IonIcon icon={chatbubbles} slot="start"></IonIcon>
                   <IonLabel>Настройки</IonLabel>
                 </IonItem>
-                <IonItem href='/settings'>
+                <IonItem href='/home'>
                   <IonIcon icon={settings} slot="start"></IonIcon>
                   <IonLabel>Лента</IonLabel>
                 </IonItem>
                 <div className="hrBorder"></div>
-                <IonItem href='/settings'>
+                <IonItem href='/page/monetization'>
                   <IonIcon icon={settings} slot="start"></IonIcon>
                   <IonLabel>Центр монетизации</IonLabel>
                 </IonItem>
-                  <IonItem href='/settings'>
+                  <IonItem href='/page/support'>
                   <IonIcon icon={settings} slot="start"></IonIcon>
                   <IonLabel>Служба поддержки</IonLabel>
                 </IonItem>
-                <IonItem href='/settings'>
+                <IonItem href='/page/question'>
                   <IonIcon icon={settings} slot="start"></IonIcon>
                   <IonLabel>Вопросы - ответы</IonLabel>
                 </IonItem>
-                  <IonItem href='/settings'>
+                  <IonItem href='/user/rank'>
                   <IonIcon icon={settings} slot="start"></IonIcon>
                   <IonLabel>Лидеры мнений</IonLabel>
                 </IonItem>
-                <IonItem href='/settings'>
+                <IonItem href='/post/elite'>
                   <IonIcon icon={settings} slot="start"></IonIcon>
                   <IonLabel>Элита</IonLabel>
                 </IonItem>
@@ -423,9 +428,15 @@ function App() {
             <Route path="/home" component={Home} exact={true} />
             <Route path="/tab2" component={Tab1} exact={true} />
             <Route path="/tab3" component={Tab1} exact={true} />
-            <Route path="/profile" component={Tab1} exact={true} />
-            <Route path='/userPage' component={userPage} exact={true} />
+            <Route path="/profile" component={userPage} exact={true} />
             <Route path='/auth' component={Login} exact={true} />
+
+            <Route path='/page/monetization' component={Monetization} exact={true} />
+            <Route path='/page/support' component={Support} exact={true} />
+            <Route path='/page/question' component={Question} exact={true} />
+            <Route path='/user/rank' component={Rank} exact={true} />
+            <Route path='/post/elite' component={Elite} exact={true} /> 
+
             <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
           </IonRouterOutlet>
 
