@@ -255,6 +255,7 @@ function App() {
               <Route path="/tab3" component={Tab1} exact={true} />
               <Route path="/profile" component={Tab1} exact={true} />
               <Route path='/userPage' component={userPage} exact={true} />
+              <Route path='/auth' component={Login} exact={true} />
               <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
             </IonRouterOutlet>
 

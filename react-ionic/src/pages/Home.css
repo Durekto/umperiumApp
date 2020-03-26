@@ -1,7 +1,4 @@
-.wrapperForUserInfo{
-    padding-left: 0 !important;
-}
-.userNameFlag{
+userNameFlag{
     display: flex;
     align-items: center;
 }
@@ -16,14 +13,7 @@
 .brain{
     max-width: 18px;
 }
-.wrapperBrain{
-    display: flex;
-    align-items: center;
-}
-.wrapperCommentAndBrain{
-    display: flex;
-    justify-content: space-around;
-}
+
 .btnComplain{
 
     margin: 0;
@@ -56,4 +46,83 @@
 .timePost{
     background-color: #eff3f6;
     color: #2d3b48;
+}
+
+.wrapperTextBtnProdvi{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    font-size: var(--my-font-size);
+    letter-spacing: normal;
+    text-transform: capitalize;
+}
+.wrapperTextBtnProdvi div{
+    display:flex;
+    align-items: center;
+}
+
+.contentPage {
+    --padding-top: 21px;
+}
+
+.contentPage ion-card {
+    margin: 0 5px 20px;
+    text-align: justify;
+}
+
+.wrapperForUserInfo{
+    padding-top: 20px;
+    padding-bottom: 0;
+    background-color: #ffffff;
+}
+
+.wrapperForUserInfo ~ ion-card-content, .wrapperCommentAndBrain, .wrapperCommentAndBrain ion-badge {
+    background: #ffffff;
+    color: #2d3b48;
+
+    --background: #ffffff;
+    --color: #2d3b48;
+    font-weight: 500;
+}
+
+.wrapperForUserInfo ion-card-title {
+    margin-top: 0;
+    padding-bottom: 4px;
+}
+
+.wrapperForUserInfo ion-avatar, .wrapperForUserInfo ion-label {
+    margin-top: 0
+}
+
+.wrapperForUserInfo ion-list {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.wrapperForUserInfo ion-item {
+    --padding-start: 0;
+}
+
+ion-img.image-announcement {
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+
+.wrapperCommentAndBrain {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.wrapperBrain, .wrapperComment {
+    display: flex;
+    align-items: center;
+}
+
+.wrapperCard{
+    background-color: #ffffff;
 }

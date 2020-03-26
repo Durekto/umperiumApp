@@ -1,5 +1,5 @@
-#post-boosting {--my-post-boosting-display: none;}
-div.ion-page.disable-boost {--my-header-height: 62px;}
+/* #post-boosting {--my-post-boosting-display: none;} */
+/* div.ion-page.disable-boost {--my-header-height: 62px;} */
 
 .ion-page ._login {
     margin: 0 auto; /* 7.5% auto */
@@ -29,7 +29,6 @@ div.ion-page.disable-boost {--my-header-height: 62px;}
     padding: 0 16px 16px;
 
     text-align: center;
-    /* font-size: 14px; */
 }
 
 /* ._login .form-group {
@@ -63,7 +62,7 @@ div.ion-page.disable-boost {--my-header-height: 62px;}
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
-    font-size: 14px;
+    font-size: var(--my-font-size);
     text-align: left;
 
     margin-bottom: 1rem;
@@ -73,32 +72,13 @@ div.ion-page.disable-boost {--my-header-height: 62px;}
     --color: #495057;
     --padding-start: 12px;
     --placeholder-color: #757d85;
-    /* --placeholder-font-style: sans-serif; */
     --placeholder-font-weight: 500;
-    --placeholder-opacity: 100%;
+    --placeholder-opacity: 90%;
 }
 
 ._login .form-control:focus {
     border-color: #242c6d;
 }
-
-/* ._login .form-control {
-    font-size: 14px;
-    font-family: Calibri, sans-serif;
-} */
-
-/* ._login .custom-control {
-	position: relative;
-	display: block;
-	min-height: 1.5rem;
-	padding-left: 1.5rem;
-}
-
-._login .custom-control-label {
-	position: relative;
-	margin-bottom: 0;
-	vertical-align: top;
-} */
 
 ._login a {
     color: #2d3b48;
@@ -145,6 +125,7 @@ div.ion-page.disable-boost {--my-header-height: 62px;}
     --color: #ffffff;
     --transition: background-color 15ms linear, border-color 15ms linear;
 
+    font-size: var(--my-font-size);
     width: 62px;
     height: 34px;
     letter-spacing: normal;
@@ -158,25 +139,18 @@ div.ion-page.disable-boost {--my-header-height: 62px;}
 
 .ion-item-highlight {
     --background-hover: #ffffff;
+    --color: #2d3b48;
     --padding-start: 0;
 
-    font-size: 14px;
-    --color: #2d3b48;
-
-    /* height: 24px; */
-    /* vertical-align: middle; */
+    font-size: var(--my-font-size);
+    font-weight: var(--my-font-weight);
 }
-
-/* .ion-item-highlight > ion-label {
-    margin-top: 0;
-    margin-bottom: 0;
-} */
 
 .ion-item-highlight ion-checkbox {
     margin-left: 0;
     margin-right: 5px;
 
-    /* --checkmark-width: 16px; */
+    --checkmark-width: 16px;
     --border-color: #ced4da;
     --border-radius: .25rem;
     --border-style: solid;

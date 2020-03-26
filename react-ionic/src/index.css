@@ -1,28 +1,30 @@
 :root {
-  --ion-font-family: Calibri;
+    --ion-font-family: Montserrat, sans-serif;
 
-  --my-background-color: #eff3f6;
-  --my-header-height: 62px; /* 154px */
-  /* --my-post-boosting-display: none; */
+    --my-background-color: #eff3f6;
+    --my-header-height: 62px; /* 154px */
+    --my-font-size: 12px;
+    --my-font-weight: 500;
+    /* --my-post-boosting-display: none; */
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  font-size: 14px;
-  font-weight: 400;
+    font-size: var(--my-font-size);
+    font-weight: var(--my-font-weight);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 
 /* ion-header > div {
-  padding-top: 50px;
+    padding-top: 50px;
 } */
