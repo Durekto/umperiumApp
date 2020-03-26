@@ -56,10 +56,44 @@ function userPage() {
             </div>
           </IonCardHeader>
           <IonCardContent>
-              <IonList>
-                  <IonItem>
+              <IonList className="WrapperOptions">
+                  <IonItem className="option">
                       <span>Охват аудитории:</span>
                       <IonBadge color="default">0</IonBadge>
+                  </IonItem>
+                  <IonItem className="option">
+                      <span>Публикаций:</span>
+                      <IonBadge color="default">1</IonBadge>
+                  </IonItem>
+                  <IonItem className="option">
+                      <span>Топовых постов:</span>
+                      <IonBadge color="default">0</IonBadge>
+                  </IonItem>
+                  <IonItem className="option">
+                      <span>Сила мысли:</span>
+                      <IonBadge color="default">0</IonBadge>
+                  </IonItem>
+                  <IonItem className="option">
+                      <span>Коментариев получено:</span>
+                      <IonBadge color="default">0</IonBadge>
+                  </IonItem>
+                  <IonItem className="option">
+                      <span>Сообщества:</span>
+                      <IonBadge color="default">0</IonBadge>
+                  </IonItem>
+                  <IonItem className="option">
+                      <span>Подписок:</span>
+                      <IonBadge color="default">0</IonBadge>
+                  </IonItem>
+                  <IonItem className="option">
+                      <span>Подписчиков:</span>
+                      <IonBadge color="default">0</IonBadge>
+                  </IonItem>
+                  <IonItem className="option">
+                      <IonBadge color="light">Тег</IonBadge>
+                      <span>1</span>
+                      <IonBadge color="light">Топовый пост</IonBadge>
+                      <span>1</span>
                   </IonItem>
               </IonList>
           </IonCardContent>

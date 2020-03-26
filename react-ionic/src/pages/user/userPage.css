@@ -87,7 +87,7 @@ progress{
     border-radius: 15px;
 }
 
-.user-page ion-list, .user-page ion-item {
+.user-page WrapperOptions, .user-page .option {
     text-align: center;
     width: 100%;
 }
