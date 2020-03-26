@@ -50,27 +50,37 @@ function Login() { //{ onClick }: EventHandlerProps
                 <IonInput tabIndex={1} className='form-control' type='email' placeholder='E-mail'></IonInput>
                 <IonInput tabIndex={2} className='form-control' type='password' placeholder='Пароль'></IonInput>
                 <IonItem className='ion-item-highlight' lines='none'>
-                  <IonCheckbox tabIndex={3} slot='start' value='isRemembered'></IonCheckbox>
-                  <IonLabel>Запомнить меня</IonLabel>
+                  <div className="wrapperOptionLogin">
+                    <div> <IonCheckbox tabIndex={3} slot='start' value='isRemembered'></IonCheckbox> </div>
+                    <div> <IonLabel>Запомнить меня</IonLabel> </div>
+                  </div>
                 </IonItem>
                 <IonButton tabIndex={4} className='login-button' type='submit'>Войти</IonButton>
                 {/*  */}
                 <IonItem tabIndex={5} className='ion-item-highlight' lines='none' target='_blank' href='#vk'>
-                  <IonImg src='/login/vk.png' alt='vk' className='_login-social-network'></IonImg>
-                  <IonLabel>Войти через ВК</IonLabel>
+                  <div className="wrapperOptionLogin">
+                    <div> <IonImg src='/login/vk.png' alt='vk' className='_login-social-network'></IonImg></div>
+                    <div> <IonLabel>Войти через ВК</IonLabel></div>
+                </div>
                 </IonItem>
                 <IonItem tabIndex={6} className='ion-item-highlight' lines='none' target='_blank' href='#fb'>
-                  <IonImg src='/login/f.png' alt='fb' className='_login-social-network'></IonImg>
-                  <IonLabel>Войти через FB</IonLabel>
+                  <div className="wrapperOptionLogin">
+                    <div><IonImg src='/login/f.png' alt='fb' className='_login-social-network'></IonImg></div>
+                    <div><IonLabel>Войти через FB</IonLabel></div>
+                  </div>
                 </IonItem>
                 {/*  */}
                 <IonItem tabIndex={5} className='ion-item-highlight' lines='none' target='_blank' href='#vk'>
-                  <i className="fas fa-lock text-muted"></i>
-                  <IonLabel>Проблемы со входом?</IonLabel>
+                  <div className="wrapperOptionLogin">
+                    <div> <i className="fas fa-lock text-muted"></i></div>
+                    <div><IonLabel>Проблемы со входом?</IonLabel></div>
+                  </div>
                 </IonItem>
                 <IonItem tabIndex={6} className='ion-item-highlight' lines='none' target='_blank' href='#fb'>
-                  <i className="fas fa-user-circle text-muted"></i>
-                  <IonLabel>Регистрация</IonLabel>
+                  <div className="wrapperOptionLogin">
+                    <div><i className="fas fa-user-circle text-muted"></i></div>
+                    <div><IonLabel>Регистрация</IonLabel></div>
+                  </div>
                 </IonItem>
               </form>
             </div>
