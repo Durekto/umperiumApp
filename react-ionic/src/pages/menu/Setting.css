@@ -2,7 +2,16 @@
     display: flex;
     justify-content: space-around;
 }
-.infoAboutYou, .social, .protection, .notification{
+.infoAboutYou{
+    display: none;
+}
+.social{
+    display: none;
+}
+.protection{
+    display: none;
+}
+.notification{
     display: none;
 }
 .wrapperNotiSetting{
@@ -26,4 +35,7 @@
 /*Для планшетов нужно будет поставить  margin-bottom:60%*/
 .notiEmail div,.notiBell div{
     height: 50px;
+}
+.current{
+    background-color: black !important;
 }

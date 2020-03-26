@@ -160,3 +160,10 @@
     height: 16px;
     margin-right: 5px;
 }
+.wrapperOptionLogin{
+    display: flex;
+    align-items: center;
+}
+.wrapperOptionLogin div{
+    height: 20px;
+}

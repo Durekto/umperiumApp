@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 
 import './Setting.css'
+import './Setting.js'
 
 import {
     IonContent,
@@ -40,12 +41,13 @@ function Settings() {
                   <IonToolbar >
                       <div className="wrapperAllSettingHeader">
                           <div className="wrapperInfoAndSocial">
-                              <div>Информация</div>
-                              <div>Соц. сети</div>
+                              <button id="infoSetting" name="infoSetting">Информация</button>
+                              <div id="SocialSetting">Соц. сети</div>
                           </div>
+
                           <div className="wrapperProtAndNoti">
-                              <div>Безопасность</div>
-                              <div>Уведомления</div>
+                              <div id="protectionSetting">Безопасность</div>
+                              <div id="notificationSetting">Уведомления</div>
                           </div>
                       </div>
                   </IonToolbar>
