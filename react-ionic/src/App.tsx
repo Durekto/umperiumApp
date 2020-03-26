@@ -69,7 +69,7 @@ import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 //#endregion
 
-import { person, chatbubbles, settings } from 'ionicons/icons';
+import { person, construct, settings, paper, cash, logoUsd, call, text, swap, trendingUp, bulb, ribbon, trophy } from 'ionicons/icons';
 
 function App() {
   const [showAlertComplain, setShowAlertComplain] = useState(false);
@@ -379,37 +379,37 @@ function App() {
                   <IonIcon icon={person} slot="start"></IonIcon>
                   <IonLabel>Вход/Регистрация</IonLabel>
                 </IonItem> */}
-                <IonItem href='/profile'>
+                <IonItem href='/auth'>
                   <IonIcon icon={person} slot="start"></IonIcon>
                   <IonLabel>Счет</IonLabel>
                 </IonItem>
-                <IonItem href='/chat'>
-                  <IonIcon icon={chatbubbles} slot="start"></IonIcon>
+                <IonItem href='/settings'>
+                  <IonIcon icon={construct} slot="start"></IonIcon>
                   <IonLabel>Настройки</IonLabel>
                 </IonItem>
                 <IonItem href='/home'>
-                  <IonIcon icon={settings} slot="start"></IonIcon>
+                  <IonIcon icon={paper} slot="start"></IonIcon>
                   <IonLabel>Лента</IonLabel>
                 </IonItem>
                 <div className="hrBorder"></div>
                 <IonItem href='/page/monetization'>
-                  <IonIcon icon={settings} slot="start"></IonIcon>
+                  <IonIcon icon={cash} slot="start"></IonIcon>
                   <IonLabel>Центр монетизации</IonLabel>
                 </IonItem>
                   <IonItem href='/page/support'>
-                  <IonIcon icon={settings} slot="start"></IonIcon>
+                  <IonIcon icon={call} slot="start"></IonIcon>
                   <IonLabel>Служба поддержки</IonLabel>
                 </IonItem>
                 <IonItem href='/page/question'>
-                  <IonIcon icon={settings} slot="start"></IonIcon>
+                  <IonIcon icon={swap} slot="start"></IonIcon>
                   <IonLabel>Вопросы - ответы</IonLabel>
                 </IonItem>
                   <IonItem href='/user/rank'>
-                  <IonIcon icon={settings} slot="start"></IonIcon>
+                  <IonIcon icon={trophy} slot="start"></IonIcon>
                   <IonLabel>Лидеры мнений</IonLabel>
                 </IonItem>
                 <IonItem href='/post/elite'>
-                  <IonIcon icon={settings} slot="start"></IonIcon>
+                  <IonIcon icon={ribbon} slot="start"></IonIcon>
                   <IonLabel>Элита</IonLabel>
                 </IonItem>
               </IonMenuToggle>
@@ -428,7 +428,8 @@ function App() {
             <Route path="/home" component={Home} exact={true} />
             <Route path="/tab2" component={Tab1} exact={true} />
             <Route path="/tab3" component={Tab1} exact={true} />
-            <Route path="/profile" component={userPage} exact={true} />
+            <Route path="/profile" component={userPage} exact={true} /> 
+
             <Route path='/auth' component={Login} exact={true} />
 
             <Route path='/page/monetization' component={Monetization} exact={true} />
