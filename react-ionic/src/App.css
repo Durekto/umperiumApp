@@ -219,3 +219,7 @@ div.ion-page {
     margin-top: 0;
     padding-top: 0;
 }
+
+ion-menu[menu-id='main-menu'] ion-content {
+    --background: #ffffff;
+}
