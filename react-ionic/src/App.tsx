@@ -45,6 +45,7 @@ import Home from './pages/Home';
 import Tab1 from './pages/Tab1';
 import userPage from "./pages/user/userPage";
 import Login from './pages/user/Login';
+import Settings from './pages/menu/Settings';
 import Monetization from './pages/menu/Monetization';
 import Support from './pages/menu/Support';
 import Question from './pages/menu/Question';
@@ -431,6 +432,7 @@ function App() {
             <Route path="/profile" component={userPage} exact={true} /> 
 
             <Route path='/auth' component={Login} exact={true} />
+            <Route path='/settings' component={Settings} exact={true} />
 
             <Route path='/page/monetization' component={Monetization} exact={true} />
             <Route path='/page/support' component={Support} exact={true} />
