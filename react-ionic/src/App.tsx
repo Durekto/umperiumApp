@@ -45,6 +45,7 @@ import Home from './pages/Home';
 import Tab1 from './pages/Tab1';
 import userPage from "./pages/user/userPage";
 import Login from './pages/user/Login';
+import Score from './pages/user/Score';
 import Settings from './pages/menu/Settings';
 import Monetization from './pages/menu/Monetization';
 import Support from './pages/menu/Support';
@@ -380,7 +381,7 @@ function App() {
                   <IonIcon icon={person} slot="start"></IonIcon>
                   <IonLabel>Вход/Регистрация</IonLabel>
                 </IonItem> */}
-                <IonItem href='/auth'>
+                <IonItem href='/user/score'>
                   <IonImg className='menu-icon-money-white' src='/moneyWhite.png' slot="start"></IonImg>
                   <IonLabel>Счет</IonLabel>
                 </IonItem>
@@ -432,6 +433,7 @@ function App() {
             <Route path="/profile" component={userPage} exact={true} /> 
 
             <Route path='/auth' component={Login} exact={true} />
+            <Route path='/user/score' component={Score} exact={true} />
             <Route path='/settings' component={Settings} exact={true} />
 
             <Route path='/page/monetization' component={Monetization} exact={true} />

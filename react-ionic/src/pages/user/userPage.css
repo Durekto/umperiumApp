@@ -49,7 +49,7 @@ ion-card-header{
 }
 
 .icons img, .icoRang{
-    width: 14px;
+    width: 14px !important;
     height: 14px;
 }
 
