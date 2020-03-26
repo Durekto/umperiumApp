@@ -220,6 +220,14 @@ div.ion-page {
     padding-top: 0;
 }
 
+/* Android ONLY */
+.menu-icon-money-white {
+    width: 24px;
+    /* height: 24px; */
+    color: #757575;
+    background: #757575;
+}
+
 /* ion-menu[menu-id='main-menu'] ion-content {
     --background: #ffffff;
 } */

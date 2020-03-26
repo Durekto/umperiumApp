@@ -381,7 +381,7 @@ function App() {
                   <IonLabel>Вход/Регистрация</IonLabel>
                 </IonItem> */}
                 <IonItem href='/auth'>
-                  <IonIcon icon={person} slot="start"></IonIcon>
+                  <IonImg className='menu-icon-money-white' src='/moneyWhite.png' slot="start"></IonImg>
                   <IonLabel>Счет</IonLabel>
                 </IonItem>
                 <IonItem href='/settings'>
