@@ -13,7 +13,27 @@ import {
   IonLabel 
 } from '@ionic/react';
 
-function Login() {
+/* Temporary decision */
+// export interface EventHandlerProps {
+//   onClick: (e: React.MouseEvent) => void
+// }
+
+function Login() { //{ onClick }: EventHandlerProps
+  // function onFocus(e: React.FocusEvent) {
+  //   console.log('Focused!', e.currentTarget);
+  //   let tabs = document.getElementsByTagName('ion-tab-bar');
+  //   tabs[0].classList.add('disable-tabs');
+  // }
+
+  // function onBlur(e: React.FocusEvent) {
+  //   console.log('Blured!', e.currentTarget);
+  //   let tabs = document.getElementsByTagName('ion-tab-bar');
+  //   tabs[0].classList.remove('disable-tabs');
+  // }
+
+  let tabs = document.getElementsByTagName('ion-tab-bar');
+  tabs[0].classList.add('disable-tabs');
+
   return(
     <IonPage>
       <IonContent className='specific-background-color'>

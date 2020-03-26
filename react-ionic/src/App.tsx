@@ -424,7 +424,6 @@ function App() {
             <Route path="/home" component={Home} exact={true} />
             <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
           </IonRouterOutlet> */}
-
         <IonTabs>
           <IonRouterOutlet>
             <Route path="/home" component={Home} exact={true} />
@@ -459,7 +458,6 @@ function App() {
               <IonLabel>Популярное</IonLabel>
             </IonTabButton>
           </IonTabBar> */}
-
           <IonTabBar slot="bottom" color='dark'>
             <IonTabButton tab="home" href="/home">
               <IonImg className='tab-icons' src="/tab-icons/main.png"></IonImg>
@@ -471,7 +469,7 @@ function App() {
                 {/* <IonIcon src="/tab-icons/writing.png" /> */}
                 {/* <IonLabel>Написать пост</IonLabel> */}
             </IonTabButton>
-            <IonTabButton tab="market" href="/market">
+            <IonTabButton tab="market" href="/auth">
               <IonImg className='tab-icons' src="/tab-icons/market.png"></IonImg>
                 {/* <IonIcon src="/tab-icons/market.png" /> */}
                 {/* <IonLabel>Моя страница</IonLabel> */}

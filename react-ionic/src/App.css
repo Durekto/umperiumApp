@@ -231,3 +231,7 @@ div.ion-page {
 /* ion-menu[menu-id='main-menu'] ion-content {
     --background: #ffffff;
 } */
+
+.disable-tabs {
+    display:none;
+}

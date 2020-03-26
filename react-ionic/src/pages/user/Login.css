@@ -73,7 +73,7 @@
     --placeholder-opacity: 90%;
 }
 
-._login .form-control:focus {
+._login ion-input.form-control:focus {
     border-color: #242c6d;
 }
 

@@ -3,7 +3,7 @@
     justify-content: space-around;
 }
 .infoAboutYou, .social, .protection, .notification{
-    display: none;
+    /* display: none; */
 }
 .wrapperNotiSetting{
     display: flex;
