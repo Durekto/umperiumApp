@@ -98,6 +98,12 @@ div.ion-page {
     --background-focused: rgba(255,255,255,0) !important;
     --background-activated: rgba(255,255,255,0) !important;
 }
+
+.btnSearch {
+    --padding-start: 12px;
+    --padding-end: 12px;
+}
+
 .userAvatar{
     height: 75px;
     width: 75px;
