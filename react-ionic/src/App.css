@@ -160,6 +160,7 @@ div.ion-page {
 .wrapperHeaderDownFilter{
      display: flex;
      align-items: center;
+     overflow-x: scroll;
 }
 
 .selectHeader{
@@ -168,7 +169,7 @@ div.ion-page {
 }
 .selectHeader ion-item{
     width:100%;
-    font-size: 60%;
+    font-size: 80%;
 }
 
 .userNameFlag{
@@ -242,4 +243,28 @@ div.ion-page {
 
 .disable-tabs {
     display:none;
+}
+
+@media (orientation: landscape) {
+    .disable-landscape {
+        display: none;
+    }
+    .contentPage {
+        --padding-top: 0;
+    }
+    div.ion-page {
+        margin-top: 0;
+    }
+}
+
+@media (orientation: portrait) {
+    .disable-landscape {
+        display: block;
+    }
+    .contentPage {
+        --padding-top: 21px;
+    }
+    div.ion-page {
+        margin-top: 20px;
+    }
 }

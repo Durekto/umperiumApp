@@ -28,7 +28,7 @@ function Popular() {
   const [showAlertComplain, setShowAlertComplain] = useState(false);
   return (
     <IonPage>
-      <IonHeader>
+      <IonHeader className='disable-landscape'>
         <IonToolbar>
           <IonButton color="danger" expand="full" >
               <div className="wrapperTextBtnProdvi">
