@@ -75,6 +75,10 @@ div.ion-page {
 .wrapperDownHeaderMenu span:hover{
     border-bottom: 2px solid white;
 }
+.wrapperDownHeaderMenu a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .logo{
     /* height: 60%; */
@@ -223,9 +227,8 @@ div.ion-page {
 /* Android ONLY */
 .menu-icon-money-white {
     width: 24px;
+    /* background-image: url(/moneyWhite.png); */
     /* height: 24px; */
-    color: #757575;
-    background: #757575;
 }
 
 /* ion-menu[menu-id='main-menu'] ion-content {

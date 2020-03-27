@@ -50,10 +50,8 @@ function Login() { //{ onClick }: EventHandlerProps
                 <IonInput tabIndex={1} className='form-control' type='email' placeholder='E-mail'></IonInput>
                 <IonInput tabIndex={2} className='form-control' type='password' placeholder='Пароль'></IonInput>
                 <IonItem className='ion-item-highlight' lines='none'>
-                  <div className="wrapperOptionLogin">
-                    <div> <IonCheckbox tabIndex={3} slot='start' value='isRemembered'></IonCheckbox> </div>
-                    <div> <IonLabel>Запомнить меня</IonLabel> </div>
-                  </div>
+                  <IonCheckbox tabIndex={3} slot='start' value='isRemembered'></IonCheckbox>
+                  <IonLabel>Запомнить меня</IonLabel>
                 </IonItem>
                 <IonButton tabIndex={4} className='login-button' type='submit'>Войти</IonButton>
                 {/*  */}

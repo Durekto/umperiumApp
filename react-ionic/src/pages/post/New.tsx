@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import '../Home.css';
 
 import { useState } from 'react';
 
@@ -24,7 +24,7 @@ import {
   IonImg,
 } from '@ionic/react';
 
-function Home() {
+function Popular() {
   const [showAlertComplain, setShowAlertComplain] = useState(false);
   return (
     <IonPage>
@@ -45,7 +45,6 @@ function Home() {
               <IonButton className="btnFilter"><img src="/filterBlack.png" alt=""/></IonButton>
             </div>
             <div className="selectHeader">
-              <IonLabel>Время</IonLabel>
               <IonSelect placeholder="Время">
                 <IonSelectOption value="hour">Час</IonSelectOption>
                 <IonSelectOption value="day">День</IonSelectOption>
@@ -55,7 +54,6 @@ function Home() {
               </IonSelect>
             </div>
             <div className="selectHeader">
-              <IonLabel>Страны</IonLabel>
               <IonSelect placeholder="Страны">
                 <IonSelectOption value="ru">Россия</IonSelectOption>
                 <IonSelectOption value="ua">Украина</IonSelectOption>
@@ -69,7 +67,6 @@ function Home() {
               <IonButton className="btnGem"> <img className="gem" src="/gem.svg" alt=""/></IonButton>
             </div>
             <div className="selectHeader">
-              <IonLabel>Элита</IonLabel>
               <IonSelect placeholder="Элита">
                 <IonSelectOption value="ru">Элита</IonSelectOption>
                 <IonSelectOption value="ua">Все разделы</IonSelectOption>
@@ -96,17 +93,17 @@ function Home() {
               <IonList>
                 <IonItem lines='none'>
                   <IonAvatar slot="start">
-                    <img src="/user-science.png" alt=""/>
+                    <img src="/user-covid.png" alt=""/>
                   </IonAvatar>
                   <IonLabel>
                     <div className="wrapperHeaderCard">
                       <div>
                         <div className="userNameFlag">
-                          <span className="UserNamePost badge">Scientist</span>
-                          <img className="userCountry picInPost" src="/POL.png" alt=""/>
+                          <span className="UserNamePost badge">COVID-19</span>
+                          <img className="userCountry picInPost" src="/CHN.png" alt=""/>
                           <img className="gem picInPost" src="/gem.svg" alt=""/>
                         </div>
-                        <div><span className="timePost badge">09.09.2020 в 09:09</span></div>
+                        <div><span className="timePost badge">24.03.2020 в 10:15</span></div>
                       </div>
                       <div className="selectInPost">
                         <IonButton className="btnComplain" onClick={() => setShowAlertComplain(true)} expand="block">
@@ -125,13 +122,15 @@ function Home() {
                   </IonLabel>
                 </IonItem>
               </IonList>
-              <IonCardTitle>1. What is Science?</IonCardTitle>
+              <IonCardTitle>1. COVID-19: 5 reasons to be cautiously hopeful</IonCardTitle>
             </IonCardHeader>
 
             <IonCardContent>
-              <IonImg className='image-announcement' src='/science.jpg' alt='picture'></IonImg>
-              Science is a systematic enterprise that builds and organizes knowledge 
-              in the form of testable explanations and predictions about the universe.
+              <IonImg className='image-announcement' src='/covid-19-2.jpg' alt='picture'></IonImg>
+                The death toll for COVID-19 is on the rise, and so is the total number of cases. 
+                In the context of this global pandemic, feeling overwhelmed by all the negative 
+                information is a natural response. But researchers are also hard at work trying 
+                to understand, treat, and prevent the new coronavirus. We take a look at some of their results.
             </IonCardContent>
             <div className="wrapperCommentAndBrain">
               <div className='wrapperComment'>
@@ -141,7 +140,7 @@ function Home() {
                     <path d="M13.607 4.417H4.342a.625.625 0 0 0-.63.62c0 .343.283.62.63.62h9.265a.624.624 0 0 0 .629-.62.625.625 0 0 0-.63-.62zm0 3.474H4.342a.625.625 0 0 0-.63.62c0 .344.283.621.63.621h9.265a.624.624 0 0 0 .629-.62.625.625 0 0 0-.63-.62z"></path>
                   </g>
                 </svg>
-                <IonBadge>88</IonBadge>
+                <IonBadge>7</IonBadge>
               </div>
               <div className="wrapperBrain">
                 <img className="brain" src="/brainMinus.png" alt="brainMinus"/>
@@ -158,21 +157,21 @@ function Home() {
               <IonList>
                 <IonItem lines='none'>
                   <IonAvatar slot="start">
-                    <img src="./user-nature.png" alt=""/>
+                    <img src="/user-covid.png" alt=""/>
                   </IonAvatar>
                   <IonLabel>
                     <div className="wrapperHeaderCard">
                       <div >
                         <div className="userNameFlag">
-                          <span className="UserNamePost badge">Nature</span>
-                          <img className="userCountry picInPost" src="./UKR.png" alt=""/>
-                          <img className="gem picInPost" src="./gem.svg" alt=""/>
+                          <span className="UserNamePost badge">COVID-19</span>
+                          <img className="userCountry picInPost" src="/CHN.png" alt=""/>
+                          <img className="gem picInPost" src="/gem.svg" alt=""/>
                         </div>
-                        <div><span className="timePost badge">27.10.2020 в 18:45</span></div>
+                        <div><span className="timePost badge">23.03.2020 в 13:59</span></div>
                       </div>
                       <div className="selectInPost">
                         <IonButton className="btnComplain" onClick={() => setShowAlertComplain(true)} expand="block">
-                            <img src="./dots.svg" alt="dots"/>
+                            <img src="/dots.svg" alt="dots"/>
                         </IonButton>
                         <IonAlert
                             isOpen={showAlertComplain}
@@ -187,12 +186,14 @@ function Home() {
                   </IonLabel>
                 </IonItem>
               </IonList>
-              <IonCardTitle>2. That's a post about Nature's heart</IonCardTitle>
+              <IonCardTitle>2. COVID-19 frontline healthcare workers at risk of mental health problems</IonCardTitle>
             </IonCardHeader>
 
             <IonCardContent>
-              Keep close to Nature's heart... and break clear away, once in awhile,
-              and climb a mountain or spend a week in the woods. Wash your spirit clean.
+              <IonImg className='image-announcement' src='/covid-19-1.jpg' alt='picture'></IonImg>
+              A new study has examined the mental health of nearly 1,300 
+              healthcare workers in China who dealt with COVID-19 patients. 
+              The research looked at symptoms of depression, anxiety, insomnia, and distress. 
             </IonCardContent>
             <div className="wrapperCommentAndBrain">
               <div className='wrapperComment'>
@@ -202,74 +203,12 @@ function Home() {
                     <path d="M13.607 4.417H4.342a.625.625 0 0 0-.63.62c0 .343.283.62.63.62h9.265a.624.624 0 0 0 .629-.62.625.625 0 0 0-.63-.62zm0 3.474H4.342a.625.625 0 0 0-.63.62c0 .344.283.621.63.621h9.265a.624.624 0 0 0 .629-.62.625.625 0 0 0-.63-.62z"></path>
                   </g>
                 </svg>
-                <IonBadge>123</IonBadge>
+                <IonBadge>13</IonBadge>
               </div>
               <div className="wrapperBrain">
-                  <img className="brain" src="./brainMinus.png" alt="brainMinus"/>
+                  <img className="brain" src="/brainMinus.png" alt="brainMinus"/>
                   <span>0</span>
-                  <img className="brain" src="./brainPlus.png" alt="brainPlus"/>
-              </div>
-            </div>
-          </IonCard>
-        </IonToolbar>
-
-        <IonToolbar>
-          <IonCard>
-            <IonCardHeader className="wrapperForUserInfo">
-              <IonList>
-                <IonItem lines='none'>
-                  <IonAvatar slot="start">
-                    <img src="./user-copypaster.png" alt=""/>
-                  </IonAvatar>
-                  <IonLabel>
-                    <div className="wrapperHeaderCard">
-                      <div>
-                        <div className="userNameFlag">
-                          <span className="UserNamePost badge">CopyPaster</span>
-                          <img className="userCountry picInPost" src="./RUS.png" alt=""/>
-                          <img className="gem picInPost" src="./gem.svg" alt=""/>
-                        </div>
-                        <div><span className="timePost badge">21.12.2020 в 12:21</span></div>
-                      </div>
-                      <div className="selectInPost">
-                        <IonButton className="btnComplain" onClick={() => setShowAlertComplain(true)} expand="block">
-                          <img src="./dots.svg" alt="dots"/>
-                        </IonButton>
-                        <IonAlert
-                          isOpen={showAlertComplain}
-                          onDidDismiss={() => setShowAlertComplain(false)}
-                          // header={'Alert'}
-                          // subHeader={'Subtitle'}
-                          message={'Пожаловаться?'}
-                          buttons={['OK','Cancel']}
-                        />
-                      </div>
-                    </div>
-                  </IonLabel>
-                </IonItem>
-              </IonList>
-              <IonCardTitle>3. SciEncE</IonCardTitle>
-            </IonCardHeader>
-
-            <IonCardContent>
-              <IonImg className='image-announcement' src='./science-corrupted.jpg' alt='picture'></IonImg>
-              SciEncE is 8a sYstematic ente5rp1rlse t8at bui0lds and 0rganizes knowleDJe 
-              in tHe form of testUHble explanati0ns and predicgg2tions ab0ut the un1vEr5e.
-            </IonCardContent>
-            <div className="wrapperCommentAndBrain">
-              <div className='wrapperComment'>
-                <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="reply" width="16" height="16">
-                  <g fill="currentColor" fillRule="evenodd">
-                    <path d="M14.802.024H3.147C1.412.024 0 1.415 0 3.126v7.087c0 1.71 1.412 3.102 3.147 3.102h7.423l3.358 3.24a.75.75 0 0 0 1.27-.539V13.29c1.55-.192 2.75-1.5 2.75-3.077V3.126c0-1.71-1.41-3.102-3.146-3.102zm1.888 10.189c0 1.026-.847 1.861-1.888 1.861h-.233a.625.625 0 0 0-.629.62v2.188l-2.664-2.626a.634.634 0 0 0-.445-.182H3.147c-1.041 0-1.888-.835-1.888-1.861V3.126c0-1.026.847-1.861 1.888-1.861h11.655c1.041 0 1.888.835 1.888 1.86v7.088z"></path>
-                    <path d="M13.607 4.417H4.342a.625.625 0 0 0-.63.62c0 .343.283.62.63.62h9.265a.624.624 0 0 0 .629-.62.625.625 0 0 0-.63-.62zm0 3.474H4.342a.625.625 0 0 0-.63.62c0 .344.283.621.63.621h9.265a.624.624 0 0 0 .629-.62.625.625 0 0 0-.63-.62z"></path>
-                  </g>
-                </svg>
-                <IonBadge>99</IonBadge>
-              </div>
-              <div className="wrapperBrain">
-                <img className="brain" src="./brainMinus.png" alt="brainMinus"/>
-                <span>0</span>
-                <img className="brain" src="./brainPlus.png" alt="brainPlus"/>
+                  <img className="brain" src="/brainPlus.png" alt="brainPlus"/>
               </div>
             </div>
           </IonCard>
@@ -279,4 +218,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Popular;

@@ -45,8 +45,15 @@ import Home from './pages/Home';
 import Tab1 from './pages/Tab1';
 import userPage from "./pages/user/userPage";
 import Login from './pages/user/Login';
+
+import PostPopular from './pages/post/Popular';
+import PostHot from './pages/post/Hot';
+import PostMindPower from './pages/post/MindPower';
+import PostNew from './pages/post/New';
+
 import Score from './pages/user/Score';
 import Settings from './pages/menu/Settings';
+
 import Monetization from './pages/menu/Monetization';
 import Support from './pages/menu/Support';
 import Question from './pages/menu/Question';
@@ -96,7 +103,7 @@ function App() {
               </IonItem>
             </div>
             <IonModal cssClass='search-modal-tab' isOpen={showModal}>
-              <IonSearchbar></IonSearchbar>
+              <IonSearchbar placeholder='Поиск'></IonSearchbar>
               <IonContent className='contentPage'>
                 <IonToolbar>
                   <IonCard>
@@ -104,21 +111,21 @@ function App() {
                       <IonList>
                         <IonItem lines='none'>
                           <IonAvatar slot="start">
-                            <img src="./user-science.png" alt=""/>
+                            <img src="/user-science.png" alt=""/>
                           </IonAvatar>
                           <IonLabel>
                             <div className="wrapperHeaderCard">
                               <div>
                                 <div className="userNameFlag">
                                   <span className="UserNamePost badge">Scientist</span>
-                                  <img className="userCountry picInPost" src="./POL.png" alt=""/>
-                                  <img className="gem picInPost" src="./gem.svg" alt=""/>
+                                  <img className="userCountry picInPost" src="/POL.png" alt=""/>
+                                  <img className="gem picInPost" src="/gem.svg" alt=""/>
                                 </div>
                                 <div><span className="timePost badge">09.09.2020 в 09:09</span></div>
                               </div>
                               <div className="selectInPost">
                                 <IonButton className="btnComplain" onClick={() => setShowAlertComplain(true)} expand="block">
-                                  <img src="./dots.svg" alt="dots"/>
+                                  <img src="/dots.svg" alt="dots"/>
                                 </IonButton>
                                 <IonAlert
                                   isOpen={showAlertComplain}
@@ -137,7 +144,7 @@ function App() {
                     </IonCardHeader>
 
                     <IonCardContent>
-                      <IonImg className='image-announcement' src='./science.jpg' alt='picture'></IonImg>
+                      <IonImg className='image-announcement' src='/science.jpg' alt='picture'></IonImg>
                       Science is a systematic enterprise that builds and organizes knowledge 
                       in the form of testable explanations and predictions about the universe.
                     </IonCardContent>
@@ -152,9 +159,9 @@ function App() {
                         <IonBadge>88</IonBadge>
                       </div>
                       <div className="wrapperBrain">
-                        <img className="brain" src="./brainMinus.png" alt="brainMinus"/>
+                        <img className="brain" src="/brainMinus.png" alt="brainMinus"/>
                         <span>0</span>
-                        <img className="brain" src="./brainPlus.png" alt="brainPlus"/>
+                        <img className="brain" src="/brainPlus.png" alt="brainPlus"/>
                       </div>
                     </div>
                   </IonCard>
@@ -166,21 +173,21 @@ function App() {
                       <IonList>
                         <IonItem lines='none'>
                           <IonAvatar slot="start">
-                            <img src="./user-nature.png" alt=""/>
+                            <img src="/user-nature.png" alt=""/>
                           </IonAvatar>
                           <IonLabel>
                             <div className="wrapperHeaderCard">
                               <div >
                                 <div className="userNameFlag">
                                   <span className="UserNamePost badge">Nature</span>
-                                  <img className="userCountry picInPost" src="./UKR.png" alt=""/>
-                                  <img className="gem picInPost" src="./gem.svg" alt=""/>
+                                  <img className="userCountry picInPost" src="/UKR.png" alt=""/>
+                                  <img className="gem picInPost" src="/gem.svg" alt=""/>
                                 </div>
                                 <div><span className="timePost badge">27.10.2020 в 18:45</span></div>
                               </div>
                               <div className="selectInPost">
                                 <IonButton className="btnComplain" onClick={() => setShowAlertComplain(true)} expand="block">
-                                    <img src="./dots.svg" alt="dots"/>
+                                    <img src="/dots.svg" alt="dots"/>
                                 </IonButton>
                                 <IonAlert
                                     isOpen={showAlertComplain}
@@ -213,9 +220,9 @@ function App() {
                         <IonBadge>123</IonBadge>
                       </div>
                       <div className="wrapperBrain">
-                          <img className="brain" src="./brainMinus.png" alt="brainMinus"/>
+                          <img className="brain" src="/brainMinus.png" alt="brainMinus"/>
                           <span>0</span>
-                          <img className="brain" src="./brainPlus.png" alt="brainPlus"/>
+                          <img className="brain" src="/brainPlus.png" alt="brainPlus"/>
                       </div>
                     </div>
                   </IonCard>
@@ -227,21 +234,21 @@ function App() {
                       <IonList>
                         <IonItem lines='none'>
                           <IonAvatar slot="start">
-                            <img src="./user-copypaster.png" alt=""/>
+                            <img src="/user-copypaster.png" alt=""/>
                           </IonAvatar>
                           <IonLabel>
                             <div className="wrapperHeaderCard">
                               <div>
                                 <div className="userNameFlag">
                                   <span className="UserNamePost badge">CopyPaster</span>
-                                  <img className="userCountry picInPost" src="./RUS.png" alt=""/>
-                                  <img className="gem picInPost" src="./gem.svg" alt=""/>
+                                  <img className="userCountry picInPost" src="/RUS.png" alt=""/>
+                                  <img className="gem picInPost" src="/gem.svg" alt=""/>
                                 </div>
                                 <div><span className="timePost badge">21.12.2020 в 12:21</span></div>
                               </div>
                               <div className="selectInPost">
                                 <IonButton className="btnComplain" onClick={() => setShowAlertComplain(true)} expand="block">
-                                  <img src="./dots.svg" alt="dots"/>
+                                  <img src="/dots.svg" alt="dots"/>
                                 </IonButton>
                                 <IonAlert
                                   isOpen={showAlertComplain}
@@ -260,7 +267,7 @@ function App() {
                     </IonCardHeader>
 
                     <IonCardContent>
-                      <IonImg className='image-announcement' src='./science-corrupted.jpg' alt='picture'></IonImg>
+                      <IonImg className='image-announcement' src='/science-corrupted.jpg' alt='picture'></IonImg>
                       SciEncE is 8a sYstematic ente5rp1rlse t8at bui0lds and 0rganizes knowleDJe 
                       in tHe form of testUHble explanati0ns and predicgg2tions ab0ut the un1vEr5e.
                     </IonCardContent>
@@ -275,9 +282,9 @@ function App() {
                         <IonBadge>99</IonBadge>
                       </div>
                       <div className="wrapperBrain">
-                        <img className="brain" src="./brainMinus.png" alt="brainMinus"/>
+                        <img className="brain" src="/brainMinus.png" alt="brainMinus"/>
                         <span>0</span>
-                        <img className="brain" src="./brainPlus.png" alt="brainPlus"/>
+                        <img className="brain" src="/brainPlus.png" alt="brainPlus"/>
                       </div>
                     </div>
                   </IonCard>
@@ -343,19 +350,19 @@ function App() {
 
 
                 </IonCard> */}
-              <IonButton onClick={() => setShowModal(false)}>Close Search</IonButton>
+              <IonButton onClick={() => setShowModal(false)}>Закрыть</IonButton>
             </IonModal>
             {/* <div> */}
             <IonButton className="btnSearch" slot='end' onClick={() => setShowModal(true)}>
-                <img src='./whiteSearch.png' alt='search'></img>
+                <img src='/whiteSearch.png' alt='search'></img>
             </IonButton>
             {/* </div> */}
           </div>
           <div className="wrapperDownHeaderMenu">
-            <span>Популярное</span>
-            <span>Обсуждение</span>
-            <span>Сила Мысли</span>
-            <span>Новое</span>
+            <a href='/post/popular'><span>Популярное</span></a>
+            <a href='/post/hot'><span>Обсуждение</span></a>
+            <a href='/post/mindpower'><span>Сила Мысли</span></a>
+            <a href='/post/new'><span>Новое</span></a>
           </div>
         </IonToolbar>
       </IonHeader>
@@ -371,18 +378,18 @@ function App() {
               </div>
               </div>
             <IonToolbar>
-              <IonTitle>Menu</IonTitle>
+              <IonTitle>Меню</IonTitle>
             </IonToolbar>
           </IonHeader>
           <IonContent id='menu-items'>
             <IonList>
               <IonMenuToggle menu='main-menu'>
-                {/* <IonItem href='/auth'>
+                <IonItem href='/auth'>
                   <IonIcon icon={person} slot="start"></IonIcon>
-                  <IonLabel>Вход/Регистрация</IonLabel>
-                </IonItem> */}
+                  <IonLabel>Вход</IonLabel>
+                </IonItem>
                 <IonItem href='/user/score'>
-                  <IonImg className='menu-icon-money-white' src='/moneyWhite.png' slot="start"></IonImg>
+                  <IonImg className='menu-icon-money-white' src='/moneyWhiteIcon.png' slot="start"></IonImg>
                   <IonLabel>Счет</IonLabel>
                 </IonItem>
                 <IonItem href='/settings'>
@@ -431,6 +438,11 @@ function App() {
             <Route path="/tab3" component={Tab1} exact={true} />
             <Route path="/profile" component={userPage} exact={true} /> 
 
+            <Route path='/post/popular' component={PostPopular} exact={true} />
+            <Route path='/post/hot' component={PostHot} exact={true} />
+            <Route path='/post/mindpower' component={PostMindPower} exact={true} />
+            <Route path='/post/new' component={PostNew} exact={true} />
+
             <Route path='/auth' component={Login} exact={true} />
             <Route path='/user/score' component={Score} exact={true} />
             <Route path='/settings' component={Settings} exact={true} />
@@ -469,7 +481,7 @@ function App() {
                 {/* <IonIcon src="/tab-icons/writing.png" /> */}
                 {/* <IonLabel>Написать пост</IonLabel> */}
             </IonTabButton>
-            <IonTabButton tab="market" href="/auth">
+            <IonTabButton tab="market" href="/market">
               <IonImg className='tab-icons' src="/tab-icons/market.png"></IonImg>
                 {/* <IonIcon src="/tab-icons/market.png" /> */}
                 {/* <IonLabel>Моя страница</IonLabel> */}

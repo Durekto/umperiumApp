@@ -167,3 +167,8 @@
 .wrapperOptionLogin div{
     height: 20px;
 }
+
+.wrapperOptionLogin ion-checkbox {
+    margin-top: 0;
+    margin-bottom: 0;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import '../Home.css';
 
 import { useState } from 'react';
 
@@ -24,7 +24,7 @@ import {
   IonImg,
 } from '@ionic/react';
 
-function Home() {
+function Popular() {
   const [showAlertComplain, setShowAlertComplain] = useState(false);
   return (
     <IonPage>
@@ -45,7 +45,6 @@ function Home() {
               <IonButton className="btnFilter"><img src="/filterBlack.png" alt=""/></IonButton>
             </div>
             <div className="selectHeader">
-              <IonLabel>Время</IonLabel>
               <IonSelect placeholder="Время">
                 <IonSelectOption value="hour">Час</IonSelectOption>
                 <IonSelectOption value="day">День</IonSelectOption>
@@ -55,7 +54,6 @@ function Home() {
               </IonSelect>
             </div>
             <div className="selectHeader">
-              <IonLabel>Страны</IonLabel>
               <IonSelect placeholder="Страны">
                 <IonSelectOption value="ru">Россия</IonSelectOption>
                 <IonSelectOption value="ua">Украина</IonSelectOption>
@@ -69,7 +67,6 @@ function Home() {
               <IonButton className="btnGem"> <img className="gem" src="/gem.svg" alt=""/></IonButton>
             </div>
             <div className="selectHeader">
-              <IonLabel>Элита</IonLabel>
               <IonSelect placeholder="Элита">
                 <IonSelectOption value="ru">Элита</IonSelectOption>
                 <IonSelectOption value="ua">Все разделы</IonSelectOption>
@@ -158,21 +155,21 @@ function Home() {
               <IonList>
                 <IonItem lines='none'>
                   <IonAvatar slot="start">
-                    <img src="./user-nature.png" alt=""/>
+                    <img src="/user-nature.png" alt=""/>
                   </IonAvatar>
                   <IonLabel>
                     <div className="wrapperHeaderCard">
                       <div >
                         <div className="userNameFlag">
                           <span className="UserNamePost badge">Nature</span>
-                          <img className="userCountry picInPost" src="./UKR.png" alt=""/>
-                          <img className="gem picInPost" src="./gem.svg" alt=""/>
+                          <img className="userCountry picInPost" src="/UKR.png" alt=""/>
+                          <img className="gem picInPost" src="/gem.svg" alt=""/>
                         </div>
                         <div><span className="timePost badge">27.10.2020 в 18:45</span></div>
                       </div>
                       <div className="selectInPost">
                         <IonButton className="btnComplain" onClick={() => setShowAlertComplain(true)} expand="block">
-                            <img src="./dots.svg" alt="dots"/>
+                            <img src="/dots.svg" alt="dots"/>
                         </IonButton>
                         <IonAlert
                             isOpen={showAlertComplain}
@@ -205,9 +202,9 @@ function Home() {
                 <IonBadge>123</IonBadge>
               </div>
               <div className="wrapperBrain">
-                  <img className="brain" src="./brainMinus.png" alt="brainMinus"/>
+                  <img className="brain" src="/brainMinus.png" alt="brainMinus"/>
                   <span>0</span>
-                  <img className="brain" src="./brainPlus.png" alt="brainPlus"/>
+                  <img className="brain" src="/brainPlus.png" alt="brainPlus"/>
               </div>
             </div>
           </IonCard>
@@ -219,21 +216,21 @@ function Home() {
               <IonList>
                 <IonItem lines='none'>
                   <IonAvatar slot="start">
-                    <img src="./user-copypaster.png" alt=""/>
+                    <img src="/user-copypaster.png" alt=""/>
                   </IonAvatar>
                   <IonLabel>
                     <div className="wrapperHeaderCard">
                       <div>
                         <div className="userNameFlag">
                           <span className="UserNamePost badge">CopyPaster</span>
-                          <img className="userCountry picInPost" src="./RUS.png" alt=""/>
-                          <img className="gem picInPost" src="./gem.svg" alt=""/>
+                          <img className="userCountry picInPost" src="/RUS.png" alt=""/>
+                          <img className="gem picInPost" src="/gem.svg" alt=""/>
                         </div>
                         <div><span className="timePost badge">21.12.2020 в 12:21</span></div>
                       </div>
                       <div className="selectInPost">
                         <IonButton className="btnComplain" onClick={() => setShowAlertComplain(true)} expand="block">
-                          <img src="./dots.svg" alt="dots"/>
+                          <img src="/dots.svg" alt="dots"/>
                         </IonButton>
                         <IonAlert
                           isOpen={showAlertComplain}
@@ -252,7 +249,7 @@ function Home() {
             </IonCardHeader>
 
             <IonCardContent>
-              <IonImg className='image-announcement' src='./science-corrupted.jpg' alt='picture'></IonImg>
+              <IonImg className='image-announcement' src='/science-corrupted.jpg' alt='picture'></IonImg>
               SciEncE is 8a sYstematic ente5rp1rlse t8at bui0lds and 0rganizes knowleDJe 
               in tHe form of testUHble explanati0ns and predicgg2tions ab0ut the un1vEr5e.
             </IonCardContent>
@@ -267,9 +264,9 @@ function Home() {
                 <IonBadge>99</IonBadge>
               </div>
               <div className="wrapperBrain">
-                <img className="brain" src="./brainMinus.png" alt="brainMinus"/>
+                <img className="brain" src="/brainMinus.png" alt="brainMinus"/>
                 <span>0</span>
-                <img className="brain" src="./brainPlus.png" alt="brainPlus"/>
+                <img className="brain" src="/brainPlus.png" alt="brainPlus"/>
               </div>
             </div>
           </IonCard>
@@ -279,4 +276,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Popular;
