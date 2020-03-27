@@ -1,5 +1,6 @@
 .wrapperAllSettingHeader{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .infoAboutYou{
@@ -36,6 +37,21 @@
 .notiEmail div,.notiBell div{
     height: 50px;
 }
+.badge{
+    font-weight: 500;
+    line-height: 1;
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
 .current{
-    background-color: black !important;
+
+    background-color: #3e3f44;
+    color: #fff;}
+.active{
+    display:block;
 }
