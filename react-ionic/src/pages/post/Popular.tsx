@@ -210,7 +210,7 @@ function Popular() {
                     <path d="M13.607 4.417H4.342a.625.625 0 0 0-.63.62c0 .343.283.62.63.62h9.265a.624.624 0 0 0 .629-.62.625.625 0 0 0-.63-.62zm0 3.474H4.342a.625.625 0 0 0-.63.62c0 .344.283.621.63.621h9.265a.624.624 0 0 0 .629-.62.625.625 0 0 0-.63-.62z"></path>
                   </g>
                 </svg>
-                <IonBadge>123</IonBadge>
+                <IonBadge>57</IonBadge>
               </div>
               <div className="wrapperBrain">
                   <img className="brain" src="/brainMinus.png" alt="brainMinus"/>
