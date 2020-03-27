@@ -45,45 +45,51 @@ function Home() {
               <IonButton className="btnFilter"><img src="/filterBlack.png" alt=""/></IonButton>
             </div>
             <div className="selectHeader">
-              <IonLabel>Время</IonLabel>
-              <IonSelect placeholder="Время">
-                <IonSelectOption value="hour">Час</IonSelectOption>
-                <IonSelectOption value="day">День</IonSelectOption>
-                <IonSelectOption value="week">Неделя</IonSelectOption>
-                <IonSelectOption value="month">Месяц</IonSelectOption>
-                <IonSelectOption value="AllTime">Все время</IonSelectOption>
-              </IonSelect>
+              <IonItem>
+                <IonLabel position="floating" >Время</IonLabel>
+                <IonSelect placeholder="Время">
+                  <IonSelectOption value="hour">Час</IonSelectOption>
+                  <IonSelectOption value="day">День</IonSelectOption>
+                  <IonSelectOption value="week">Неделя</IonSelectOption>
+                  <IonSelectOption value="month">Месяц</IonSelectOption>
+                  <IonSelectOption value="AllTime">Все время</IonSelectOption>
+                </IonSelect>
+              </IonItem>
             </div>
             <div className="selectHeader">
-              <IonLabel>Страны</IonLabel>
-              <IonSelect placeholder="Страны">
-                <IonSelectOption value="ru">Россия</IonSelectOption>
-                <IonSelectOption value="ua">Украина</IonSelectOption>
-                <IonSelectOption value="blr">Белоруссия</IonSelectOption>
-                <IonSelectOption value="kaz">Казахстан</IonSelectOption>
-                <IonSelectOption value="ge">Грузия</IonSelectOption>
-                <IonSelectOption value="AllCountry">All Time</IonSelectOption>
-              </IonSelect>
+              <IonItem>
+                <IonLabel position="floating">Страны</IonLabel>
+                <IonSelect placeholder="Страны">
+                  <IonSelectOption value="ru">Россия</IonSelectOption>
+                  <IonSelectOption value="ua">Украина</IonSelectOption>
+                  <IonSelectOption value="blr">Белоруссия</IonSelectOption>
+                  <IonSelectOption value="kaz">Казахстан</IonSelectOption>
+                  <IonSelectOption value="ge">Грузия</IonSelectOption>
+                  <IonSelectOption value="AllCountry">All Time</IonSelectOption>
+                </IonSelect>
+              </IonItem>
             </div>
             <div>
               <IonButton className="btnGem"> <img className="gem" src="/gem.svg" alt=""/></IonButton>
             </div>
             <div className="selectHeader">
-              <IonLabel>Элита</IonLabel>
-              <IonSelect placeholder="Элита">
-                <IonSelectOption value="ru">Элита</IonSelectOption>
-                <IonSelectOption value="ua">Все разделы</IonSelectOption>
-                <IonSelectOption value="blr">Власть / Политика</IonSelectOption>
-                <IonSelectOption value="kaz">Медиа / СМИ</IonSelectOption>
-                <IonSelectOption value="ge">Культура / Искусство</IonSelectOption>
-                <IonSelectOption value="AllCountry">Бизнес / Экономика</IonSelectOption>
-                <IonSelectOption value="AllCountry">Наука / Образование</IonSelectOption>
-                <IonSelectOption value="AllCountry">Техника / Транспорт</IonSelectOption>
-                <IonSelectOption value="AllCountry">Путешествия / Досуг</IonSelectOption>
-                <IonSelectOption value="AllCountry">Благотворительность</IonSelectOption>
-                <IonSelectOption value="AllCountry">Спорт / Здоровье</IonSelectOption>
-                <IonSelectOption value="AllCountry">Корпоративные страницы</IonSelectOption>
-              </IonSelect>
+              <IonItem>
+                <IonLabel position="floating">Элита</IonLabel>
+                <IonSelect placeholder="Элита">
+                  <IonSelectOption value="ru">Элита</IonSelectOption>
+                  <IonSelectOption value="ua">Все разделы</IonSelectOption>
+                  <IonSelectOption value="blr">Власть / Политика</IonSelectOption>
+                  <IonSelectOption value="kaz">Медиа / СМИ</IonSelectOption>
+                  <IonSelectOption value="ge">Культура / Искусство</IonSelectOption>
+                  <IonSelectOption value="AllCountry">Бизнес / Экономика</IonSelectOption>
+                  <IonSelectOption value="AllCountry">Наука / Образование</IonSelectOption>
+                  <IonSelectOption value="AllCountry">Техника / Транспорт</IonSelectOption>
+                  <IonSelectOption value="AllCountry">Путешествия / Досуг</IonSelectOption>
+                  <IonSelectOption value="AllCountry">Благотворительность</IonSelectOption>
+                  <IonSelectOption value="AllCountry">Спорт / Здоровье</IonSelectOption>
+                  <IonSelectOption value="AllCountry">Корпоративные страницы</IonSelectOption>
+                </IonSelect>
+              </IonItem>
             </div>
           </div>
         </IonToolbar>
