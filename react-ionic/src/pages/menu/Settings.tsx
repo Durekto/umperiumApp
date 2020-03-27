@@ -26,6 +26,22 @@ import {
 } from '@ionic/react';
 
 function Settings() {
+    let setOfInputs = document.getElementsByTagName('ion-input');
+    for (let i = 0; i < setOfInputs.length; i++) {
+        setOfInputs[i].addEventListener('focusin', onFocus);
+        setOfInputs[i].addEventListener('focusout', onBlur);
+    }
+
+    function onFocus() {
+        let tabs = document.getElementsByTagName('ion-tab-bar');
+        tabs[0].classList.add('disable-tabs');
+    }
+
+    function onBlur() {
+        let tabs = document.getElementsByTagName('ion-tab-bar');
+        tabs[0].classList.remove('disable-tabs');
+    } 
+
     const [showAlert1, setShowAlert1] = useState(false);
 
     return (
@@ -60,12 +76,12 @@ function Settings() {
                       </div>
                   </IonToolbar>
               </IonCardHeader>
-              <IonCardContent  >
+              <IonCardContent>
                       <div data-index="0" className="infoAboutYou tabsPanel active">
                           <h3>Информация о вас:</h3>
                           <IonItem>
                               <IonLabel position="floating">Имя</IonLabel>
-                              <IonInput> </IonInput>
+                              <IonInput > </IonInput>
                           </IonItem>
                           <IonItem>
                               <IonLabel position="floating">Фамилия</IonLabel>

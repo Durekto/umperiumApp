@@ -12,11 +12,11 @@
 }
 .buyUmp{
     margin-bottom: 10%;
+    text-align: center;
 }
 .wrapperMoneyUmpImgText{
     display: flex !important;
     flex-direction: column;
-
 }
 
 .btnMoneyUmp{
