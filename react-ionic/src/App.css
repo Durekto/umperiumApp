@@ -163,7 +163,12 @@ div.ion-page {
 }
 
 .selectHeader{
+
     width: 30%;
+}
+.selectHeader ion-item{
+    width:100%;
+    font-size: 75%;
 }
 
 .userNameFlag{

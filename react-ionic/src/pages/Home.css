@@ -126,3 +126,6 @@ ion-img.image-announcement {
 .wrapperCard{
     background-color: #ffffff;
 }
+.labelNone{
+    display: none !important;
+}
