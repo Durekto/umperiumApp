@@ -1,26 +1,55 @@
-// var info = document.getElementById('infoSetting');
-// info.classList.add('current');
-// alert(info.className);
+window.onload = function() {
+var tabSettings = document.querySelectorAll(".wrapperAllSettingHeader .tabSetting");
+var tabPanels = document.querySelectorAll(".tabsPanel");
+
+if(tabSettings && tabPanels){
+    for (let setting of tabSettings) {
+        setting.addEventListener("click", e =>  {
+
+            e.preventDefault();
+
+            document.querySelector(".wrapperAllSettingHeader .current").classList.remove("current");
+            document.querySelector(".tabsPanel.active").classList.remove("active");
 
 
-// var info = document.getElementById('infoSetting').classList.add('current');
-// var social = document.getElementById('SocialSetting');
-// var protection = document.getElementById('protectionSetting');
-// var noti = document.getElementById('notificationSetting');
 
-// function show(info){
-    // info.classList.toggle('current');
-    // info.className=info.className+" current";
-    // alert( info.classList );
-// }
 
-// if(info) {
-    // info.className=info.className+" current";
-    // alert( info.classList );
-    // info.classList.toggle('current');
-//     info.addEventListener("click", alert('fdf'), true);
-// }
+            var parentListItem = setting.parentElement;
+            parentListItem.classList.add("current");
+            var index = [...parentListItem.parentElement.children].indexOf(parentListItem);
 
-// var info = document.getElementById('infoSetting');
-// info.classList.add('current');
-// alert(info.className);
+            var panel = [...tabPanels].filter(setting => setting.getAttribute("data-index") == index);
+
+            panel[0].classList.add("active");
+
+        });
+    }
+}
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
