@@ -91,3 +91,13 @@ progress{
     text-align: center;
     width: 100%;
 }
+.wrapperRank{
+    display: flex;
+    text-align: center;
+}
+.wrapperRank span{
+    height: 14px;
+}
+.wrapperRank img{
+    margin: 1% 0 0 5px;
+}
