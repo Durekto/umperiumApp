@@ -1,0 +1,21 @@
+.wrapperSocialSupport{
+    display:flex;
+    align-items: center;
+}
+.wrapperSocialSupport img{
+    width: 10% !important;
+    margin-right: 20px;
+}
+.imgSupportBtn{
+    width: 30px !important;
+
+    color: white;
+}
+.TitleForOtherCard{
+    text-align: center;
+}
+.textOtherCard{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}

@@ -1,0 +1,82 @@
+.titleRankThinkers{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 500;
+    color:black;
+    border-bottom: 1px solid black;
+    padding: 5% 5% 5% 12%;
+
+    background-color: #f8f9fa;
+}
+.itemRankThinkers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.itemRankCommunities{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.avatarThinkers img{
+    width: 35px;
+    border-radius: 50%;
+}
+.greyBackground{
+    background-color: #f8f9fa;
+}
+.badgeUserRank{
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #3e3f44;
+    color: white;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+.titleRankCommunities{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 500;
+    color:black;
+    font-size: 10px;
+    padding: 8%;
+
+    border-bottom: 1px solid black;
+    background-color: #f8f9fa;
+}
+
+.titleTitleCommunities{
+    margin-left: 30%;
+}
+.followerTitleCommunities{
+    margin-left:  10%;
+}
+.numberTitleCommunities{
+    margin-left: 0 !important;
+}
+.CommunitiesNumberImg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.CommunitiesNumberImg img{
+    margin-left: 80%;
+}
+.itemUserCommunities{
+    /*margin-right: 5%;*/
+}
+.itemFollowerCommunities{
+    margin-right: 8%;
+}
+
+
+

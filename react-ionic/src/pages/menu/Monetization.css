@@ -1,0 +1,25 @@
+.monetizationBlackMoney{
+    width: 15%;
+}
+.monetIcon{
+    width: 8% !important;
+    height: 20px;
+}
+.titleItemMonet{
+    color:blue;
+    font-weight: 700 ;
+    padding-left: 5px;
+    font-size: 90%;
+}
+.titleImgMonet{
+    display: flex;
+    align-items: center;
+}
+.TitleForOtherCard{
+    text-align: center;
+}
+.textOtherCard{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}

@@ -40,7 +40,7 @@ function Settings() {
     function onBlur() {
         let tabs = document.getElementsByTagName('ion-tab-bar');
         tabs[0].classList.remove('disable-tabs');
-    } 
+    }
 
     const [showAlert1, setShowAlert1] = useState(false);
 
@@ -48,7 +48,7 @@ function Settings() {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Settings</IonTitle>
+          <IonTitle>Настройки</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
@@ -56,23 +56,19 @@ function Settings() {
               <IonCardHeader>
                   <IonToolbar >
                       <div className="wrapperAllSettingHeader">
-                          {/*<div className="wrapperInfoAndSocial">*/}
                               <div className="current">
                                 <div className="tabSetting badge" id="infoSetting">Информация</div>
                               </div>
                               <div>
                                 <div className="tabSetting badge" id="SocialSetting">Социальные сети</div>
                               </div>
-                          {/*</div>*/}
 
-                          {/*<div className="wrapperProtAndNoti">*/}
                               <div>
                                 <div className="tabSetting badge" id="protectionSetting">Безопасность</div>
                               </div>
                               <div>
                                 <div className="tabSetting badge" id="notificationSetting">Уведомления</div>
                               </div>
-                          {/*</div>*/}
                       </div>
                   </IonToolbar>
               </IonCardHeader>
