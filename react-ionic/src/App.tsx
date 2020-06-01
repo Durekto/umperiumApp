@@ -28,7 +28,7 @@ import {
     IonCardHeader,
     IonAvatar,
     IonImg,
-    IonAlert, 
+    IonAlert,
     IonBadge,
     IonCardTitle,
 } from '@ionic/react';
@@ -43,6 +43,7 @@ import { useState } from 'react';
 
 import Home from './pages/Home';
 import Tab1 from './pages/Tab1';
+import Market from './pages/Market';
 import userPage from "./pages/user/userPage";
 import Login from './pages/user/Login';
 
@@ -59,6 +60,22 @@ import Support from './pages/menu/Support';
 import Question from './pages/menu/Question';
 import Rank from './pages/menu/Rank';
 import Elite from './pages/menu/Elite';
+
+import Grand from './pages/monetization/Grand';
+import Reward from './pages/monetization/Reward';
+import Referal from './pages/monetization/Referal';
+
+import Promation from './pages/market/Promation';
+import Views from './pages/market/Views';
+import Autoviews from './pages/market/Autoviews';
+import Trendfooter from './pages/market/Trendfooter';
+import EliteAccount from './pages/market/EliteAccount';
+import Umperials from './pages/market/Umperials';
+
+import About from './pages/umperium/About';
+import Agreement from './pages/umperium/Agreement';
+import Confidentiality from './pages/umperium/Confidentiality';
+import Advertising from './pages/umperium/Advertising';
 
 //#region CSS
 /* Core CSS required for Ionic components to work properly */
@@ -145,7 +162,7 @@ function App() {
 
                     <IonCardContent>
                       <IonImg className='image-announcement' src='/science.jpg' alt='picture'></IonImg>
-                      Science is a systematic enterprise that builds and organizes knowledge 
+                      Science is a systematic enterprise that builds and organizes knowledge
                       in the form of testable explanations and predictions about the universe.
                     </IonCardContent>
                     <div className="wrapperCommentAndBrain">
@@ -268,7 +285,7 @@ function App() {
 
                     <IonCardContent>
                       <IonImg className='image-announcement' src='/science-corrupted.jpg' alt='picture'></IonImg>
-                      SciEncE is 8a sYstematic ente5rp1rlse t8at bui0lds and 0rganizes knowleDJe 
+                      SciEncE is 8a sYstematic ente5rp1rlse t8at bui0lds and 0rganizes knowleDJe
                       in tHe form of testUHble explanati0ns and predicgg2tions ab0ut the un1vEr5e.
                     </IonCardContent>
                     <div className="wrapperCommentAndBrain">
@@ -290,7 +307,7 @@ function App() {
                   </IonCard>
                 </IonToolbar>
               </IonContent>
-              
+
                 {/* <IonCard>
                     <IonCardHeader className="wrapperForUserInfo">
                       <IonList>
@@ -435,8 +452,8 @@ function App() {
           <IonRouterOutlet>
             <Route path="/home" component={Home} exact={true} />
             <Route path="/tab2" component={Tab1} exact={true} />
-            <Route path="/tab3" component={Tab1} exact={true} />
-            <Route path="/profile" component={userPage} exact={true} /> 
+            <Route path="/Market" component={Market} exact={true} />
+            <Route path="/profile" component={userPage} exact={true} />
 
             <Route path='/post/popular' component={PostPopular} exact={true} />
             <Route path='/post/hot' component={PostHot} exact={true} />
@@ -451,7 +468,23 @@ function App() {
             <Route path='/page/support' component={Support} exact={true} />
             <Route path='/page/question' component={Question} exact={true} />
             <Route path='/user/rank' component={Rank} exact={true} />
-            <Route path='/post/elite' component={Elite} exact={true} /> 
+            <Route path='/post/elite' component={Elite} exact={true} />
+
+            <Route path='/monetization/grand' component={Grand} exact={true} />
+            <Route path='/monetization/reward' component={Reward} exact={true} />
+            <Route path='/monetization/referal' component={Referal} exact={true} />
+
+            <Route path='/market/promation' component={Promation} exact={true} />
+            <Route path='/market/views' component={Views} exact={true} />
+            <Route path='/market/autoviews' component={Autoviews} exact={true} />
+            <Route path='/market/trendfooter' component={Trendfooter} exact={true} />
+            <Route path='/market/elite_account' component={EliteAccount} exact={true} />
+            <Route path='/market/umperials' component={Umperials} exact={true} />
+
+            <Route path='/umperium/about' component={About} exact={true} />
+            <Route path='/umperium/agreement' component={Agreement} exact={true} />
+            <Route path='/umperium/confidentiality' component={Confidentiality} exact={true} />
+            <Route path='/umperium/advertising' component={Advertising} exact={true} />
 
             <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
           </IonRouterOutlet>
